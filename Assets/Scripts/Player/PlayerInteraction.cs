@@ -63,8 +63,11 @@ public class PlayerInteraction : MonoBehaviour
                 closest = i;
             }
         }
-        closest.outline.enabled = true;
-        closestInteractable = closest;
+        if (closest != null)
+        {
+            closest.outline.enabled = true;
+            closestInteractable = closest;
+        }
     }
 
 
@@ -75,6 +78,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             closestInteractable.Interact();
         }
+        CheckCloset();
     }
 
 
