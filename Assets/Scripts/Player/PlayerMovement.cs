@@ -88,4 +88,11 @@ public class PlayerMovement : MonoBehaviour
         return 0;
 
     }
+
+    public void OnMovement(InputValue value)
+    {
+
+    }
+
+
 }
