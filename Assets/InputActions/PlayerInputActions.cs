@@ -127,7 +127,24 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Player"",
+            ""bindingGroup"": ""Player"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
@@ -229,6 +246,15 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+    private int m_PlayerSchemeIndex = -1;
+    public InputControlScheme PlayerScheme
+    {
+        get
+        {
+            if (m_PlayerSchemeIndex == -1) m_PlayerSchemeIndex = asset.FindControlSchemeIndex("Player");
+            return asset.controlSchemes[m_PlayerSchemeIndex];
+        }
+    }
     public interface IPlayerActions
     {
         void OnInteract(InputAction.CallbackContext context);

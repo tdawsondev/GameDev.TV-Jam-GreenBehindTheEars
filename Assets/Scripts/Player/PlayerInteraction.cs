@@ -5,20 +5,25 @@ using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private PlayerInputActions inputActions;
+    #region Singleton
+
+    public static PlayerInteraction instance;
+
     private void Awake()
     {
-        inputActions = new PlayerInputActions();
+        if (instance != null)
+        {
+            Debug.LogWarning("More than one PlayerInteraction Object");
+        }
+        instance = this;
     }
-    private void OnEnable()
-    {
-        inputActions.Player.Interact.performed += Interact;
-        inputActions.Player.Interact.Enable(); 
-    }
-    private void OnDisable()
-    {
-        inputActions.Player.Interact.Disable();
-    }
+    #endregion
+
+
+
+    public List<Interactable> interactables;
+    private Interactable closestInteractable;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,10 +37,44 @@ public class PlayerInteraction : MonoBehaviour
         
     }
 
+    public void AddInteract(Interactable i)
+    {
+        interactables.Add(i);
+        CheckCloset();
+    }
+    public void RemoveInteract(Interactable i)
+    {
+        interactables.Remove(i); 
+        i.outline.enabled = false;
+    }
 
-    void Interact(InputAction.CallbackContext obj)
+    private void CheckCloset()
+    {
+        Interactable closest = null;
+        foreach(Interactable i in interactables)
+        {
+            if(closest == null)
+            {
+                closest = i;
+                continue;
+            }
+            if(Vector3.Distance(transform.position, closest.transform.position) < Vector3.Distance(transform.position, i.transform.position))
+            {
+                closest = i;
+            }
+        }
+        closest.outline.enabled = true;
+        closestInteractable = closest;
+    }
+
+
+    void OnInteract(InputValue value)
     {
         Debug.Log("Interact");
+        if(closestInteractable != null)
+        {
+            closestInteractable.Interact();
+        }
     }
 
 

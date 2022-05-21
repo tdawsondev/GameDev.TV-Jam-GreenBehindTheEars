@@ -38,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
 
+        
+
         // Basic Movement
         float x, z;
 
@@ -52,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+
     }
 
     // Update is called once per frame
@@ -65,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     /// <param name="name"></param>
     /// <returns></returns>
-    private float GetSmoothRawAxis(string name) 
+    private float GetSmoothRawAxis(string name)
     {
         float sensitivity = 5f;
         float dead = 0.001f;
@@ -86,11 +89,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         return 0;
-
-    }
-
-    public void OnMovement(InputValue value)
-    {
 
     }
 
