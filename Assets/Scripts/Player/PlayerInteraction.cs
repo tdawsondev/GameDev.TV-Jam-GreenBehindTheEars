@@ -37,6 +37,9 @@ public class PlayerInteraction : MonoBehaviour
     {
         interactables.Remove(i); 
         i.outline.enabled = false;
+        if (HUDController.instance)
+            HUDController.instance.HideInteractionMessage();
+        CheckCloset();
     }
 
     private void CheckCloset()
@@ -44,12 +47,13 @@ public class PlayerInteraction : MonoBehaviour
         Interactable closest = null;
         foreach(Interactable i in interactables)
         {
-            if(closest == null)
+            i.outline.enabled = false;
+            if (closest == null)
             {
                 closest = i;
                 continue;
             }
-            if(Vector3.Distance(transform.position, closest.transform.position) < Vector3.Distance(transform.position, i.transform.position))
+            if(Vector3.Distance(transform.position, closest.transform.position) > Vector3.Distance(transform.position, i.transform.position))
             {
                 closest = i;
             }
@@ -57,14 +61,26 @@ public class PlayerInteraction : MonoBehaviour
         if (closest != null)
         {
             closest.outline.enabled = true;
+            if (HUDController.instance)
+            {
+                HUDController.instance.ShowInteractionMessage(closest);
+            }
             closestInteractable = closest;
+        }
+    }
+
+    private void Update()
+    {
+        if(interactables.Count >= 2) // if in range of 2 interactable objects, constantly check which object is closer
+        {
+            CheckCloset();
         }
     }
 
 
     void OnInteract(InputValue value)
     {
-        Debug.Log("Interact");
+
         if(closestInteractable != null)
         {
             closestInteractable.Interact();

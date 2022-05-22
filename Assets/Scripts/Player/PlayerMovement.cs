@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private InputAction movement;
 
     public Transform graphics;
+    public Animator animator;
+
 
     [SerializeField] CharacterController controller;
     public float speed = 5f;
@@ -46,6 +48,11 @@ public class PlayerMovement : MonoBehaviour
         if(input.magnitude > 0)
         {
             RotateGraphics(input);
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
         }
 
         Vector3 moveVec = transform.right * x + transform.forward * z;
