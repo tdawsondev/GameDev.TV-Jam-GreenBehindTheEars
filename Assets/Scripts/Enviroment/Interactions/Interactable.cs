@@ -9,6 +9,8 @@ public abstract class Interactable : MonoBehaviour
     private Transform player;
     public Outline outline;
 
+    public string message;
+
     public abstract void Interact();
 
 

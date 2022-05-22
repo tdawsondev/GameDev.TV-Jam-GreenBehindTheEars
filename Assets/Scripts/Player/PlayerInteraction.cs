@@ -21,21 +21,12 @@ public class PlayerInteraction : MonoBehaviour
 
 
 
-    public List<Interactable> interactables;
+    private List<Interactable> interactables = new List<Interactable>();
     private Interactable closestInteractable;
 
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 
     public void AddInteract(Interactable i)
     {
