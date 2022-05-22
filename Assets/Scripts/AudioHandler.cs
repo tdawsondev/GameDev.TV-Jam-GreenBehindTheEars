@@ -9,6 +9,11 @@ public class AudioHandler : MonoBehaviour
 
     const int numberBackgroundMusicTracks = 3;
 
+    public enum AUDIO_MUSIC
+    {
+        spooky = 0
+    }
+
     [Header("Music")]
     [SerializeField] AudioSource musicAudioSource = null;
     [SerializeField] AudioClip[] backgroundMusicTracks = new AudioClip[numberBackgroundMusicTracks];
@@ -37,12 +42,30 @@ public class AudioHandler : MonoBehaviour
         if(musicAudioSource == null) { return; }
 
         SetMusicVolume(musicVolume);
-        musicAudioSource.clip = backgroundMusicTracks[curBackgroundTrackIndex];
-        musicAudioSource.Play();
+        SongRequest(AUDIO_MUSIC.spooky);
 
         if(soundFXAudioSource == null) { return; }
 
         SetSoundFXVolume(soundFXVolume);
+    }
+
+    public void SongRequest(AUDIO_MUSIC requestedTrack)
+    {
+        if(musicAudioSource == null) { return; }
+
+        switch(requestedTrack)
+        {
+            case AUDIO_MUSIC.spooky:
+                musicAudioSource.clip = backgroundMusicTracks[0];
+                break;
+            default:
+                break;
+        }
+
+        musicAudioSource.Play();
+
+        if (isMusicPaused)
+            musicAudioSource.Pause();
     }
 
     public void PauseMusicToggle()
