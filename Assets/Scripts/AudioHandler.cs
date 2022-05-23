@@ -4,57 +4,72 @@ using UnityEngine;
 
 public class AudioHandler : MonoBehaviour
 {
-
-    public static AudioHandler Instance { get; private set; }
-
     const int numberBackgroundMusicTracks = 3;
 
     public enum AUDIO_MUSIC
     {
-        spooky = 0
+        spooky = 0,
+        none
     }
 
     [Header("Music")]
     [SerializeField] AudioSource musicAudioSource = null;
     [SerializeField] AudioClip[] backgroundMusicTracks = new AudioClip[numberBackgroundMusicTracks];
-    [SerializeField] int curBackgroundTrackIndex = 0;
-    [SerializeField][Range(0f, 1f)] float musicVolume = 0.7f;
+    [SerializeField] AUDIO_MUSIC curBackgroundMusic = AUDIO_MUSIC.none;
 
     [Header("SoundFX")]
     [SerializeField] AudioSource soundFXAudioSource = null;
-    [SerializeField][Range(0f, 1f)] float soundFXVolume = 0.5f;
+
 
     bool isMusicPaused = false;
+    GameSettings settings = null;
 
-    private void Awake()
-    {
-        if(Instance != null && Instance != this)
-            Destroy(gameObject);
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
-
+    /// <summary>
+    /// Links to settings and starts the music.
+    /// </summary>
     private void Start()
     {
+        settings = GameObject.FindGameObjectWithTag("Settings").GetComponent<GameSettings>();
+
+        if(settings == null) { return; }
         if(musicAudioSource == null) { return; }
 
-        SetMusicVolume(musicVolume);
-        SongRequest(AUDIO_MUSIC.spooky);
+        SetMusicVolume(settings.GetMusicVolume());
+        SetBackgroundMusic(AUDIO_MUSIC.spooky);
 
         if(soundFXAudioSource == null) { return; }
 
-        SetSoundFXVolume(soundFXVolume);
+        SetSoundFXVolume(settings.GetSoundFXVolume());
+    }
+    /// <summary>
+    /// pauses/unpause music.
+    /// </summary>
+    /// <param name="pause">Whether to pause or unpause.</param>
+    public void PauseMusic(bool pause)
+    {
+        if (pause)
+            musicAudioSource.Pause();
+        else
+            musicAudioSource.UnPause();
     }
 
-    public void SongRequest(AUDIO_MUSIC requestedTrack)
+    #region Setters
+    /// <summary>
+    /// Sets the background music and plays it.
+    /// If the requested track is the same as the current one
+    /// then it just returns / does not restart song.
+    /// </summary>
+    /// <param name="requestedTrack">Music to play.</param>
+    public void SetBackgroundMusic(AUDIO_MUSIC requestedTrack)
     {
-        if(musicAudioSource == null) { return; }
+        if (musicAudioSource == null) { return; }
+        if (requestedTrack == curBackgroundMusic) { return; } 
 
-        switch(requestedTrack)
+        switch (requestedTrack)
         {
+            case AUDIO_MUSIC.none:
+                musicAudioSource.clip = null;
+                break;
             case AUDIO_MUSIC.spooky:
                 musicAudioSource.clip = backgroundMusicTracks[0];
                 break;
@@ -62,43 +77,32 @@ public class AudioHandler : MonoBehaviour
                 break;
         }
 
+        curBackgroundMusic = requestedTrack;
+
+        if(requestedTrack == AUDIO_MUSIC.none) { return; }
+
         musicAudioSource.Play();
 
         if (isMusicPaused)
             musicAudioSource.Pause();
     }
-
-    public void PauseMusicToggle()
-    {
-        isMusicPaused = !isMusicPaused;
-
-        if (isMusicPaused)
-            musicAudioSource.Pause();
-        else
-            musicAudioSource.UnPause();
-    }
-
-    #region Setters
+    /// <summary>
+    /// Sets music volume.
+    /// </summary>
+    /// <param name="newVolume">Volume.</param>
     public void SetMusicVolume(float newVolume)
     {
-        Mathf.Abs(newVolume);
-        Mathf.Clamp(newVolume, 0f, 1f);
-
-        musicVolume = newVolume;
-
         if(musicAudioSource == null) { return; }
-        musicAudioSource.volume = musicVolume;
+        musicAudioSource.volume = newVolume;
     }
-
+    /// <summary>
+    /// Sets soundFX volume.
+    /// </summary>
+    /// <param name="newVolume">Volume.</param>
     public void SetSoundFXVolume(float newVolume)
     {
-        Mathf.Abs(newVolume);
-        Mathf.Clamp(newVolume, 0f, 1f);
-
-        soundFXVolume = newVolume;
-
         if(soundFXAudioSource == null) { return; }
-        soundFXAudioSource.volume = soundFXVolume;
+        soundFXAudioSource.volume = newVolume;
     }
     #endregion
 }

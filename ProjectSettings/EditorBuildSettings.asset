@@ -6,7 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 7278ce509362d534189b142380c9692b
+  - enabled: 1
+    path: Assets/Scenes/GhostTownOverworld.unity
+    guid: 3740f6297fc564f4d82f2d3539943c86
+  - enabled: 1
+    path: Assets/Scenes/KabungusTest.unity
+    guid: 70a5fa136a7e89747a994103623c4226
+  - enabled: 1
+    path: Assets/Scenes/DreamsTest.unity
+    guid: 93db667abbf86cc4e9e5754167bbedef
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7428c309e1006cb49a99049b0aefa1ce, type: 2}
