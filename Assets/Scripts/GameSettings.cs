@@ -19,6 +19,9 @@ public class GameSettings : MonoBehaviour
     /// </summary>
     private void Awake()
     {
+        Debug.Log($"Initialize save system from Game Settings.");
+        SaveSystem.Init();
+
         if (Instance != null && Instance != this)
             Destroy(gameObject);
         else
