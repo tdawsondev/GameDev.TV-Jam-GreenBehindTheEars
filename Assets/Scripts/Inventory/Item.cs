@@ -16,6 +16,10 @@ public class Item : ScriptableObject
 
     public static string currentID = "000000";
 
+    private void Awake()
+    {
+        GenerateID();
+    }
 
 
     //Generates and ID and saves it to a file so we can make sure generated IDs dont overlap
@@ -26,7 +30,7 @@ public class Item : ScriptableObject
         currentID = streamReader.ReadToEnd();
         streamReader.Close();
 
-        ID = currentID;
+        ID = currentID.TrimEnd('\r', '\n');
 
         int count = int.Parse(currentID);
         count++;

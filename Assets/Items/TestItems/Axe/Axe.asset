@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df0ae290f7a41fb4ebaf7d23ef129c28, type: 3}
-  m_Name: BlueCube
+  m_Name: Axe
   m_EditorClassIdentifier: 
-  itemName: Blue Cube
-  description: This is the blue cube test item. There will be lots more text for
-    this item.
-  icon: {fileID: 21300000, guid: 22a36cc843e87d14fa051f69589e9d9c, type: 3}
-  ID: 000018
-  prefab: {fileID: 3412023575276109997, guid: a160337827557c44d95ea602d0559de4, type: 3}
+  itemName: Axe
+  description: Test Axe Item
+  icon: {fileID: 21300000, guid: 638a37ab869ccfa4e90e5adb6fe0f135, type: 3}
+  ID: 000004
+  prefab: {fileID: 7693124953328216210, guid: 28959ef1e467fb74880371de686dce5b, type: 3}

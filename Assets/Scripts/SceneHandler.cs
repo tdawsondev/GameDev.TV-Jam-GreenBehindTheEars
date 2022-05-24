@@ -22,6 +22,7 @@ public class SceneHandler : MonoBehaviour
         switch(levelName)
         {
             case LEVELS.title:
+                SaveSystem.DeleteAllTemps(); // All Temps deleted when going to main menu
                 buildIndex = 0;
                 break;
             case LEVELS.ghostTownOverworld:

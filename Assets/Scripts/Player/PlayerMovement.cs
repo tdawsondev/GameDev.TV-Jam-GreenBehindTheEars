@@ -4,6 +4,22 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
+    #region Singleton
+
+    public static PlayerMovement instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("More than one PlayerMovement Object");
+        }
+        instance = this;
+        AfterAwake();
+    }
+    #endregion
+
+
     private PlayerInputActions inputActions;
     private InputAction movement;
 
@@ -14,9 +30,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] CharacterController controller;
     public float speed = 5f;
     float valx, valz; // used in input smoothing. 
+
+    public bool movementDisabled = false;
     
 
-    private void Awake()
+    private void AfterAwake()
     {
         inputActions = new PlayerInputActions();
     }
@@ -36,34 +54,45 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    public void DisableMovement()
+    {
+        movementDisabled = true;
+    }
+    public void EnableMovement()
+    {
+        movementDisabled = false;
+    }
+
     private void Update()
     {
-        // Basic Movement
-        float x, z;
-        Vector2 input = movement.ReadValue<Vector2>();
-
-        x = GetSmoothRawAxis("Horizontal", input);
-        z = GetSmoothRawAxis("Vertical", input);
-
-        if(input.magnitude > 0)
+        if (!movementDisabled)
         {
-            RotateGraphics(input);
-            animator.SetBool("isRunning", true);
+            // Basic Movement
+            float x, z;
+            Vector2 input = movement.ReadValue<Vector2>();
+
+            x = GetSmoothRawAxis("Horizontal", input);
+            z = GetSmoothRawAxis("Vertical", input);
+
+            if (input.magnitude > 0)
+            {
+                RotateGraphics(input);
+                animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+            }
+
+            Vector3 moveVec = transform.right * x + transform.forward * z;
+
+            if (moveVec.magnitude != 0f)
+            {
+                controller.Move(moveVec * speed * Time.deltaTime);
+
+            }
+
         }
-        else
-        {
-            animator.SetBool("isRunning", false);
-        }
-
-        Vector3 moveVec = transform.right * x + transform.forward * z;
-
-        if (moveVec.magnitude != 0f)
-        {
-            controller.Move(moveVec * speed * Time.deltaTime);
-
-        }
-
-
     }
 
     private void RotateGraphics(Vector2 input)

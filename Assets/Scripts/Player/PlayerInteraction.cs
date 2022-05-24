@@ -23,10 +23,19 @@ public class PlayerInteraction : MonoBehaviour
 
     private List<Interactable> interactables = new List<Interactable>();
     private Interactable closestInteractable;
-
+    private bool interactionDisabled = false;
 
     // Start is called before the first frame update
-   
+
+
+    public void DisableInteraction()
+    {
+        interactionDisabled = true;
+    }
+    public void EnableInteraction()
+    {
+        interactionDisabled = false;
+    }
 
     public void AddInteract(Interactable i)
     {
@@ -80,12 +89,14 @@ public class PlayerInteraction : MonoBehaviour
 
     void OnInteract(InputValue value)
     {
-
-        if(closestInteractable != null)
+        if (!interactionDisabled)
         {
-            closestInteractable.Interact();
+            if (closestInteractable != null)
+            {
+                closestInteractable.Interact();
+            }
+            CheckCloset();
         }
-        CheckCloset();
     }
 
 

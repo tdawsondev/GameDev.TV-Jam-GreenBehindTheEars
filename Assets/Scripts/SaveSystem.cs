@@ -23,6 +23,10 @@ public static class SaveSystem
     {
         File.WriteAllText(SAVE_FOLDER + saveFileName + ".txt", saveString);
     }
+    public static void TempSave(string saveString, string saveFileName)
+    {
+        File.WriteAllText(TEMP_SAVE_FOLDER + saveFileName + ".txt", saveString);
+    }
 
     public static string Load(string saveFileName)
     {
@@ -40,6 +44,38 @@ public static class SaveSystem
             return null;
         }
 
+    }
+
+    public static string LoadTemp(string saveFileName)
+    {
+        DirectoryInfo directoryInfo = new DirectoryInfo(TEMP_SAVE_FOLDER);
+        FileInfo[] saveFiles = directoryInfo.GetFiles("*.txt");
+
+        if (File.Exists(TEMP_SAVE_FOLDER + saveFileName + ".txt"))
+        {
+            string saveString = File.ReadAllText(TEMP_SAVE_FOLDER + saveFileName + ".txt");
+            return saveString;
+        }
+        else
+        {
+            Debug.Log($"No save file found.");
+            return null;
+        }
+
+    }
+
+    /// <summary>
+    /// Deletes all files in the Temp save folder. This function should be called in the main menu to ensure temp data wont carry into the game.\
+    /// Should also be called on application quit or return to main menu.
+    /// </summary>
+    public static void DeleteAllTemps()
+    {
+        DirectoryInfo directoryInfo = new DirectoryInfo(TEMP_SAVE_FOLDER);
+        FileInfo[] saveFiles = directoryInfo.GetFiles();
+        foreach(FileInfo file in saveFiles)
+        {
+            file.Delete();
+        }
     }
 
 }

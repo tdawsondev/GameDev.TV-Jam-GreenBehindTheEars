@@ -93,16 +93,19 @@ public class InventoryUI : MonoBehaviour
     /// </summary>
     public void ActivateInventory()
     {
-        Debug.Log("Inventory");
+        //Debug.Log("Inventory");
         UpdateInventoryUI();
         invetoryOpen = true;
         inventoryMenuObject.SetActive(true);
+        Player.instance.DisablePlayerAction();
+        slots[0].GetComponent<Button>().Select();
     }
 
     public void CloseInventory()
     {
         invetoryOpen = false;
         inventoryMenuObject.SetActive(false);
+        Player.instance.EnablePlayerAction();
     }
 
     /// <summary>
@@ -132,5 +135,20 @@ public class InventoryUI : MonoBehaviour
             slots.Add(button);
         }
         
+    }
+
+    public void TempSaveButton()
+    {
+        inventory.SaveInventoryTemp();
+    }
+
+    public void LoadTempSaveButton()
+    {
+        inventory.LoadInventoryTemp();
+        UpdateInventoryUI();
+    }
+    public void DeleteAllTempsButton()
+    {
+        SaveSystem.DeleteAllTemps();
     }
 }

@@ -15,7 +15,5 @@ MonoBehaviour:
   itemName: Cube
   description: This is a test cube to test out the inventory system.
   icon: {fileID: 21300000, guid: fe34d91f486a8bb4088d7a6767f20542, type: 3}
-  ID: '000002
-
-'
+  ID: 000002
   prefab: {fileID: 1900690912996202612, guid: 987861097287f8f4d99c92112101eca4, type: 3}
