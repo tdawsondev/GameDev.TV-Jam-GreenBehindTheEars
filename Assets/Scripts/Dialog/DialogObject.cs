@@ -6,14 +6,14 @@ using UnityEngine;
 public class CharacterPoint
 {
     [System.Serializable]
-    public enum CHARACTER_POINTS
+    public enum CHARACTER
     {
         GraveKeeper = 0,
         Winter = 1,
         Soldier = 2,
         Amara = 3
     }
-    public CHARACTER_POINTS character;
+    public CHARACTER character;
     public int amount;
 }
 [System.Serializable]
@@ -22,6 +22,7 @@ public class Choice
     public string text;
     public List<CharacterPoint> characterPoints = new List<CharacterPoint>();
     public DialogObject nextDialog;
+    public List<DialogTask> tasks = new List<DialogTask>();
 }
 
 
