@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        settings = GameObject.FindGameObjectWithTag("Settings").GetComponent<GameSettings>();
+        settings = GameSettings.Instance;
         pm = PlayerMovement.instance;
         pi = PlayerInteraction.instance;
     }

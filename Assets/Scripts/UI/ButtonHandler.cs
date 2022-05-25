@@ -15,9 +15,9 @@ public class ButtonHandler : MonoBehaviour
 
     private void Start()
     {
-        settings = GameObject.FindGameObjectWithTag("Settings").GetComponent<GameSettings>();
+        settings = GameSettings.Instance;
 
-        if(startAsSelected == null) { return; }
+        if (startAsSelected == null) { return; }
 
         startAsSelected.Select();
     }
