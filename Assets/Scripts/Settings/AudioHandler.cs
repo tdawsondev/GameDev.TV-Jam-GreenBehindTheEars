@@ -29,7 +29,7 @@ public class AudioHandler : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        settings = GameObject.FindGameObjectWithTag("Settings").GetComponent<GameSettings>();
+        settings = GameSettings.Instance;
 
         if(settings == null) { return; }
         if(musicAudioSource == null) { return; }
