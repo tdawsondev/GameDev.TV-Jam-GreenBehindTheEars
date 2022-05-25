@@ -20,12 +20,18 @@ public class Player : MonoBehaviour
     }
     #endregion
 
+    [SerializeField] GameObject pauseMenuUI = null;
+
     PlayerMovement pm;
     PlayerInteraction pi;
+
+    GameSettings settings = null;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        settings = GameObject.FindGameObjectWithTag("Settings").GetComponent<GameSettings>();
         pm = PlayerMovement.instance;
         pi = PlayerInteraction.instance;
     }
@@ -39,6 +45,21 @@ public class Player : MonoBehaviour
     {
         pm.EnableMovement();
         pi.EnableInteraction();
+    }
+
+    public void OnTEST()
+    {
+        Debug.Log($"Test function initiated!!!");
+    }
+
+    public void OnPause()
+    {
+        if(settings == null) { return; }
+        settings.SetPauseState(true);
+
+        if(pauseMenuUI == null) { return; }
+        pauseMenuUI.SetActive(true);
+
     }
 
     // Update is called once per frame

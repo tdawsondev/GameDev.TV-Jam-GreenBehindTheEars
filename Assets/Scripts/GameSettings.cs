@@ -13,6 +13,7 @@ public class GameSettings : MonoBehaviour
     [SerializeField] [Range(0f, 1f)] float soundFXVolume = 0.5f;
 
     private bool isMusicPlaying = true;
+    private bool isGamePaused = false;
 
     /// <summary>
     /// This is a Singleton.
@@ -87,10 +88,26 @@ public class GameSettings : MonoBehaviour
         if (audioHandler == null) { return; }
         audioHandler.SetSoundFXVolume(musicVolume);
     }
+    /// <summary>
+    /// Tells settings if game should be paused or not.
+    /// </summary>
+    /// <param name="state">True == paused.</param>
+    public void SetPauseState(bool state)
+    {
+        isGamePaused = state;
+    }
 
     #endregion
 
     #region Getters
+    /// <summary>
+    /// Whether the game is currently paused.
+    /// </summary>
+    /// <returns>True == game is paused.</returns>
+    public bool GetPauseState()
+    {
+        return isGamePaused;
+    }
     /// <summary>
     /// Returns whether music is currently playing.
     /// </summary>
