@@ -7,12 +7,19 @@ using UnityEngine.SceneManagement;
 public class SceneHandler : MonoBehaviour
 {
 
+    GameSettings settings = null;
+
     public enum LEVELS
     {
         title = 0,
         ghostTownOverworld = 1,
         kabungusTest = 2,
         dreamsTest = 3
+    }
+
+    private void Start()
+    {
+        settings = GameSettings.Instance;
     }
 
     public void LoadLevel(LEVELS levelName)
@@ -29,6 +36,7 @@ public class SceneHandler : MonoBehaviour
                 buildIndex = 1;
                 break;
             case LEVELS.kabungusTest:
+                settings.SetMusic(AudioHandler.AUDIO_MUSIC.town);
                 buildIndex = 2;
                 break;
             case LEVELS.dreamsTest:

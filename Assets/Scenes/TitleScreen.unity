@@ -1953,14 +1953,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioHandler
       objectReference: {fileID: 0}
-    - target: {fileID: 8751943500483113083, guid: 40b86035a0342474c901f06b2d05915d, type: 3}
-      propertyPath: backgroundMusicTracks.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: b8dd5fa0621be244788bbf7d10f299b1, type: 3}
-    - target: {fileID: 8751943500483113083, guid: 40b86035a0342474c901f06b2d05915d, type: 3}
-      propertyPath: backgroundMusicTracks.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: b8dd5fa0621be244788bbf7d10f299b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40b86035a0342474c901f06b2d05915d, type: 3}
 --- !u!1 &1176874473

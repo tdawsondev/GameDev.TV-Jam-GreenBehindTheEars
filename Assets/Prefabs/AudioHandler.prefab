@@ -48,12 +48,10 @@ MonoBehaviour:
   musicAudioSource: {fileID: 8751943500483113082}
   backgroundMusicTracks:
   - {fileID: 8300000, guid: b8dd5fa0621be244788bbf7d10f299b1, type: 3}
+  - {fileID: 8300000, guid: 2fa371f7bc7c75841b510d212168c87b, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  curBackgroundTrackIndex: 0
-  musicVolume: 0.7
+  curBackgroundMusic: 1
   soundFXAudioSource: {fileID: 8751943500483113081}
-  soundFXVolume: 0.5
 --- !u!82 &8751943500483113082
 AudioSource:
   m_ObjectHideFlags: 0

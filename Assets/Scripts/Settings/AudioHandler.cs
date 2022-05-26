@@ -9,6 +9,7 @@ public class AudioHandler : MonoBehaviour
     public enum AUDIO_MUSIC
     {
         spooky = 0,
+        town = 1,
         none
     }
 
@@ -72,6 +73,9 @@ public class AudioHandler : MonoBehaviour
                 break;
             case AUDIO_MUSIC.spooky:
                 musicAudioSource.clip = backgroundMusicTracks[0];
+                break;
+            case AUDIO_MUSIC.town:
+                musicAudioSource.clip = backgroundMusicTracks[1];
                 break;
             default:
                 break;
