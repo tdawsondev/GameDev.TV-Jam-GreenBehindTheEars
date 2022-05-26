@@ -21,11 +21,13 @@ public class Player : MonoBehaviour
     #endregion
 
     [SerializeField] GameObject pauseMenuUI = null;
+    [SerializeField] ButtonHandler buttonHandler = null;
 
     PlayerMovement pm;
     PlayerInteraction pi;
 
     GameSettings settings = null;
+    
 
 
     // Start is called before the first frame update
@@ -54,18 +56,15 @@ public class Player : MonoBehaviour
 
     public void OnPause()
     {
-        Debug.Log(settings);
         if (settings == null) { return; }
         settings.SetPauseState(true);
 
         if (pauseMenuUI == null) { return; }
         pauseMenuUI.SetActive(true);
+        
+        if(buttonHandler == null) { return; }
+        buttonHandler.SetSelected();
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

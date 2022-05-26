@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,12 +16,14 @@ public class GameSettings : MonoBehaviour
     private bool isMusicPlaying = true;
     private bool isGamePaused = false;
 
+    PlayerMovement playerMovement = null;
+    PlayerInteraction playerInteraction = null;
+
     /// <summary>
     /// This is a Singleton.
     /// </summary>
     private void Awake()
     {
-        Debug.Log($"Initialize save system from Game Settings.");
         SaveSystem.Init();
 
         if (Instance != null && Instance != this)
@@ -30,11 +33,6 @@ public class GameSettings : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-    }
-
-    private void Start()
-    {
-        Debug.Log($"We could set player settings from last save file here if we want.");
     }
 
     #region Setters
@@ -94,7 +92,30 @@ public class GameSettings : MonoBehaviour
     /// <param name="state">True == paused.</param>
     public void SetPauseState(bool state)
     {
+        if(playerInteraction == null)
+        {
+            SetupPlayerInfo();
+        }
+
         isGamePaused = state;
+
+        if (isGamePaused)
+        {
+            playerMovement.enabled = false;
+            playerInteraction.DisableInteraction();
+        }
+        else
+        {
+            playerMovement.enabled = true;
+            playerInteraction.EnableInteraction();
+        }
+
+    }
+
+    private void SetupPlayerInfo()
+    {
+        playerMovement = PlayerMovement.instance;
+        playerInteraction = PlayerInteraction.instance;
     }
 
     #endregion

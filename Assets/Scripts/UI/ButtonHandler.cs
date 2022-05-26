@@ -17,22 +17,26 @@ public class ButtonHandler : MonoBehaviour
     {
         settings = GameSettings.Instance;
 
-        if (startAsSelected == null) { return; }
-
-        startAsSelected.Select();
+        SetSelected();
     }
 
     public void Play()
     {
         if(sceneHandler == null) { return; }
         Debug.Log($"Going to dreams test level.");
-        sceneHandler.LoadLevel(SceneHandler.LEVELS.dreamsTest);
+        sceneHandler.LoadLevel(SceneHandler.LEVELS.kabungusTest);
     }
 
     public void SetPause(bool state)
     {
         if(settings == null) { return; }
         settings.SetPauseState(state);
+    }
+
+    public void SetSelected()
+    {
+        if (startAsSelected == null) { return; }
+        startAsSelected.Select();
     }
 
     public void MainMenu()

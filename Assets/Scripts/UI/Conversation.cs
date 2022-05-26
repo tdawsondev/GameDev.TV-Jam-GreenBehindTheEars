@@ -20,7 +20,7 @@ public class Conversation : MonoBehaviour
     }
     #endregion
 
-
+    
     [SerializeField] GameObject DialogueMenu = null;
 
     [Header("Dialogue")]
@@ -35,13 +35,14 @@ public class Conversation : MonoBehaviour
 
     [Header("SpeakerImage")]
     [SerializeField] Image speakerImage = null;
-    [SerializeField] Image speakerSourceImage = null;  /*DELETE*/ //Will not need this once we are calling from outside of the class.
 
-    /*DELETE*/
-    //Will not need this once it is being called from outside of class.
+
+    PlayerMovement pm = null;
+
+
     private void Start()
     {
-        //UpdateDialogueUI();
+        pm = PlayerMovement.instance;
     }
 
     /// <summary>
@@ -66,6 +67,15 @@ public class Conversation : MonoBehaviour
                 cb.SetChoice(choice);
             }
         }
+
+        if (dialogButtons.Count > 0)
+            dialogButtons[0].GetComponent<Button>().Select();
+
+        if(pm == null) { Debug.Log($"No player movement connected."); return; }
+
+        pm.enabled = false;
+
+
     }
 
     /// <summary>
@@ -77,8 +87,6 @@ public class Conversation : MonoBehaviour
         dialogText.text = dialogObject.dialogText;
         speakerText.text = dialogObject.Speaker.characterName;
         speakerImage.sprite = dialogObject.Speaker.characterImage;
-        //SetSpeakerImageSprite(speakerSourceImage.sprite);
-        //PopulateSpeakerImage();
     }
 
     public void OpenDialog(DialogObject dobj)
@@ -98,6 +106,11 @@ public class Conversation : MonoBehaviour
     public void CloseDialog()
     {
         DialogueMenu.SetActive(false);
+
+        if (pm == null) { Debug.Log($"No player movement connected."); return; }
+
+        pm.enabled = true;
+
     }
 
 }
