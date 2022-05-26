@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: GK_Boat_6-1
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: They move on.
+  choices:
+  - text: Move on to where?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: da359217977812e4da0887584c12e8b7, type: 2}
+    tasks: []
+  - text: "Does that mean I\u2019m not ready to leave the world behind either?"
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 8b5955c6cd033284ea348d7be7ba7265, type: 2}
+    tasks: []
+  - text: How do you know all this? Who are you?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 8b5955c6cd033284ea348d7be7ba7265, type: 2}
+    tasks: []

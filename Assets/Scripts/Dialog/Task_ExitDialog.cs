@@ -7,8 +7,7 @@ public class Task_ExitDialog : DialogTask
 {
     public override bool CallTask()
     {
-        Debug.Log("Exiting Dialog");
-        //Dialog Manager .exit dialog or something. 
+        Conversation.instance.CloseDialog();
         return true; // returns true after exit
     }
 

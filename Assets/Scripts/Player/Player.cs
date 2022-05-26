@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
 
     public void OnPause()
     {
+        Debug.Log(settings);
         if (settings == null) { return; }
         settings.SetPauseState(true);
 

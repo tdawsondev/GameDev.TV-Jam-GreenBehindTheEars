@@ -29,7 +29,7 @@ public class Choice
 [CreateAssetMenu(fileName = "New DialogOption", menuName = "Dialog/Dialog")]
 public class DialogObject : ScriptableObject
 {
-    public string Speaker = "Name";
+    public DialogCharacter Speaker = null;
     [TextArea(3, 8)]
     public string dialogText = "Words, words, words.";
     public List<Choice> choices = new List<Choice>();

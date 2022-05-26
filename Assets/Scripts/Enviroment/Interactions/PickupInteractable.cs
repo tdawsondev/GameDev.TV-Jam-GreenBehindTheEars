@@ -10,7 +10,6 @@ public class PickupInteractable : Interactable
     public override void Interact()
     {
         Inventory.instance.AddItem(item);
-        HUDController.instance.AddItemNotification(item);
         PlayerInteraction.instance.RemoveInteract(this);
         Destroy(gameObject);
     }

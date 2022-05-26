@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: GK_Boat_6
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: The nature of my being here is in effect rather complex, and intricately
+    woven with yours. But it is not yet the time to explain it, as it would be difficult
+    for you to understand. Say, why not go over to your house? I do believe that
+    once you are settled in a little, it might be a tad easier for you to process
+    it all.
+  choices:
+  - text: I have a house?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: b21e9527d42d7804fa100136b92aaf55, type: 2}
+    tasks: []
+  - text: "Why wouldn\u2019t I be able to understand?"
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 06df43efd063b444cbb946ba39336c61, type: 2}
+    tasks: []

@@ -32,6 +32,7 @@ public class Inventory : MonoBehaviour
     public void AddItem(Item i)
     {
         items.Add(i);
+        HUDController.instance.AddItemNotification(i);
     }
 
     public bool RemoveItem(Item i)

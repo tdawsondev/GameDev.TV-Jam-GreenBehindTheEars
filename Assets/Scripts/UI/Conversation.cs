@@ -2,14 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Conversation : MonoBehaviour
 {
+    #region Singleton
+
+    public static Conversation instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("More than one Conversation Object");
+        }
+        instance = this;
+    }
+    #endregion
+
+
+    [SerializeField] GameObject DialogueMenu = null;
 
     [Header("Dialogue")]
     [SerializeField] GameObject DialogueOptionsParent = null;
     [SerializeField] GameObject DialogueChoiceObject = null;
-    [SerializeField] int numberOfDialogueOptions = 3;
+    public DialogObject dialogObject;
+    [SerializeField] TextMeshProUGUI speakerText;
+    [SerializeField] TextMeshProUGUI dialogText;
+    List<GameObject> dialogButtons = new List<GameObject>();
+
+
 
     [Header("SpeakerImage")]
     [SerializeField] Image speakerImage = null;
@@ -19,7 +41,7 @@ public class Conversation : MonoBehaviour
     //Will not need this once it is being called from outside of class.
     private void Start()
     {
-        UpdateDialogueUI();
+        //UpdateDialogueUI();
     }
 
     /// <summary>
@@ -27,10 +49,22 @@ public class Conversation : MonoBehaviour
     /// </summary>
     private void PopulateDialogueOptions()
     {
-        for (int i = 0; i < numberOfDialogueOptions; i++)
+        foreach(GameObject go in dialogButtons)
+        {
+            Destroy(go);
+        }
+        dialogButtons = new List<GameObject>();
+        foreach(Choice choice in dialogObject.choices)
         {
             GameObject dialogueObject = Instantiate(DialogueChoiceObject);
-            dialogueObject.transform.parent = DialogueOptionsParent.transform;
+            dialogueObject.transform.SetParent(DialogueOptionsParent.transform);
+            dialogueObject.transform.localScale = new Vector3(1, 1, 1);
+            ConversationButton cb = dialogueObject.GetComponent<ConversationButton>();
+            dialogButtons.Add(dialogueObject);
+            if (cb != null)
+            {
+                cb.SetChoice(choice);
+            }
         }
     }
 
@@ -40,29 +74,30 @@ public class Conversation : MonoBehaviour
     private void UpdateDialogueUI()
     {
         PopulateDialogueOptions();
-        SetSpeakerImageSprite(speakerSourceImage.sprite);
+        dialogText.text = dialogObject.dialogText;
+        speakerText.text = dialogObject.Speaker.characterName;
+        speakerImage.sprite = dialogObject.Speaker.characterImage;
+        //SetSpeakerImageSprite(speakerSourceImage.sprite);
         //PopulateSpeakerImage();
     }
 
-    #region Setters
-    /// <summary>
-    /// How many dialogue options player has this screen.
-    /// </summary>
-    /// <param name="numOptions">Total number of available options.</param>
-    public void SetNumberOfDialogueOptions(int numOptions)
+    public void OpenDialog(DialogObject dobj)
     {
-        numberOfDialogueOptions = numOptions;
-    }
+        dialogObject = dobj;
+        if (dialogObject != null)
+        {
+            UpdateDialogueUI();
+            DialogueMenu.SetActive(true);
+        }
+        else
+        {
+            CloseDialog();
+        }
 
-    /// <summary>
-    /// Image of who is speaking with the player.
-    /// </summary>
-    /// <param name="newImage">Picture of conversation partner.</param>
-    public void SetSpeakerImageSprite(Sprite newSprite)
+    }
+    public void CloseDialog()
     {
-        speakerImage.sprite = newSprite;
+        DialogueMenu.SetActive(false);
     }
-
-    #endregion
 
 }
