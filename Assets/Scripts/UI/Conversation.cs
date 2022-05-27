@@ -38,11 +38,13 @@ public class Conversation : MonoBehaviour
 
 
     PlayerMovement pm = null;
+    Inventory inventory = null;
 
 
     private void Start()
     {
         pm = PlayerMovement.instance;
+        inventory = Inventory.instance;
     }
 
     /// <summary>
@@ -57,6 +59,19 @@ public class Conversation : MonoBehaviour
         dialogButtons = new List<GameObject>();
         foreach(Choice choice in dialogObject.choices)
         {
+            //We have a choice to make
+            if (choice.requiredItem != null)
+            {
+                if (!inventory.CheckForItem(choice.requiredItem.itemName))
+                {
+                    Debug.Log($"Player does not yet have item {choice.requiredItem.itemName}.");
+                    continue;
+                }
+            }
+                
+
+
+
             GameObject dialogueObject = Instantiate(DialogueChoiceObject);
             dialogueObject.transform.SetParent(DialogueOptionsParent.transform);
             dialogueObject.transform.localScale = new Vector3(1, 1, 1);

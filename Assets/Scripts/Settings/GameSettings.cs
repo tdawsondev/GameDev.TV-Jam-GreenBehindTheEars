@@ -13,6 +13,9 @@ public class GameSettings : MonoBehaviour
     [SerializeField] [Range(0f, 1f)] float musicVolume = 0.7f;
     [SerializeField] [Range(0f, 1f)] float soundFXVolume = 0.5f;
 
+    [Header("Levels")]
+    [SerializeField] SceneHandler sceneHandler = null;
+
     private bool isMusicPlaying = true;
     private bool isGamePaused = false;
 
@@ -121,6 +124,12 @@ public class GameSettings : MonoBehaviour
     #endregion
 
     #region Getters
+
+    public SceneHandler GetSceneHandler()
+    {
+        return sceneHandler;
+    }
+
     /// <summary>
     /// Whether the game is currently paused.
     /// </summary>
