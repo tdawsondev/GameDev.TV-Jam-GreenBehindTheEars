@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: ChopMeSomeWoodEntry
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: I need you to chop me some wood, boy. The fire burns low and my ghostly
+    bones sense a chill.
+  choices:
+  - text: I would, but I don't have an axe.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 24ec23179ac7c7a4f9c225397d81d779, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+  - text: Sure, I've got my trusty Axe right here? Show me the forst old timer!
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 18425bb13f637684b935be94b13b3289, type: 2}
+    tasks: []
+    requiredItem: {fileID: 11400000, guid: 8df311f2d17c40947940ed56a5296f97, type: 2}
+  - text: That's mighty rude. I'm leaving.
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}

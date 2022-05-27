@@ -50,6 +50,25 @@ public class Inventory : MonoBehaviour
     }
 
     /// <summary>
+    /// Check player inventory for an item based on the string Item.itemName variable.
+    /// </summary>
+    /// <param name="requestedItemName"></param>
+    /// <returns>True if string matches item name in player inventory.</returns>
+    public bool CheckForItem(string requestedItemName)
+    {
+        if(items.Count == 0) { Debug.Log($"Item list is empty."); return false; }
+
+        foreach(Item item in items)
+        {
+            if (item.itemName == requestedItemName)
+                return true;
+        }
+
+        return false;
+
+    }
+
+    /// <summary>
     /// Input Key For inventory
     /// </summary>
     /// <param name="value"></param>

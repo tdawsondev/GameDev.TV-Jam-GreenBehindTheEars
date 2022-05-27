@@ -10,23 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: 01TestEntry
+  m_Name: CMSW_HereIsAnAxe
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: Hey hows it going?
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: No worries. These things gather with age. Just like the cobwebs around
+    an old soul.
   choices:
-  - text: Pretty Good!
+  - text: Okay the, I'll go get you that wood.
     characterPoints:
-    - character: 1
-      amount: 1
-    nextDialog: {fileID: 11400000, guid: fc61baef5a065134fac1ef7987ec50ba, type: 2}
+    - character: 0
+      amount: 2
+    nextDialog: {fileID: 0}
     tasks:
     - {fileID: 11400000, guid: c29a8cc07a589144486ad351c9fa9d4c, type: 2}
-    requiredItem: {fileID: 11400000, guid: 8df311f2d17c40947940ed56a5296f97, type: 2}
-  - text: Screw You Winter!
+    requiredItem: {fileID: 0}
+  - text: That's kinda unsettling.
     characterPoints:
-    - character: 1
-      amount: -1
-    nextDialog: {fileID: 11400000, guid: d80940bff65774d45a37a31cf39cc297, type: 2}
-    tasks: []
+    - character: 0
+      amount: 2
+    nextDialog: {fileID: 0}
+    tasks:
+    - {fileID: 11400000, guid: c29a8cc07a589144486ad351c9fa9d4c, type: 2}
     requiredItem: {fileID: 0}

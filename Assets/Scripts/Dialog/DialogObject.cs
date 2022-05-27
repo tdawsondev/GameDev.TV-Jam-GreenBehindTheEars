@@ -23,6 +23,7 @@ public class Choice
     public List<CharacterPoint> characterPoints = new List<CharacterPoint>();
     public DialogObject nextDialog;
     public List<DialogTask> tasks = new List<DialogTask>();
+    public Item requiredItem;
 }
 
 
