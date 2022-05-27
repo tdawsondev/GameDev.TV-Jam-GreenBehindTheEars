@@ -18,7 +18,8 @@ public class Item : ScriptableObject
 
     private void Awake()
     {
-        GenerateID();
+        if(ID =="" || ID == "000000")
+            GenerateID();
     }
 
 
