@@ -10,19 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: BoatEntry
+  m_Name: CMSW_BroughtMyOwnAxe
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: Ah, I had been wondering when you would get here. Hmm, you have certainly
-    taken your time about it.
+  dialogText: Prepared, good for you. I used to be prepared before the ages sapped
+    my strength and weakened my mind.
   choices:
-  - text: Where is here?
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 9cf1c2092a7d6a440975c1c235814a63, type: 2}
+  - text: I'll remain sturdy through the ages. Time to get that wood.
+    characterPoints:
+    - character: 0
+      amount: 2
+    nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
-  - text: Who are you?
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 9cf1c2092a7d6a440975c1c235814a63, type: 2}
+  - text: Sorry about your mind.. and body... and everything. Afterlifes been rough.
+    characterPoints:
+    - character: 0
+      amount: 2
+    nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
