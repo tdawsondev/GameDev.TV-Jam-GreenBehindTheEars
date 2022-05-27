@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1257614997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257614998}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1257614998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257614997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8906968645284948798}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8906968644833004242
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +197,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8906968645241769436}
+  - {fileID: 1257614998}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -182,11 +213,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8eb111342a63a47bc744ff92a40464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graphics: {fileID: 8906968645241769436}
-  animator: {fileID: 8906968645560829368}
   controller: {fileID: 8906968645284948797}
   speed: 10
   movementDisabled: 0
+  graphics: {fileID: 8906968645241769436}
+  animator: {fileID: 8906968645560829368}
+  groundCheck: {fileID: 1257614998}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  isGrounded: 1
 --- !u!114 &8906968645284948787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
+  buttonHandler: {fileID: 0}
 --- !u!1 &8906968645595033423
 GameObject:
   m_ObjectHideFlags: 0
