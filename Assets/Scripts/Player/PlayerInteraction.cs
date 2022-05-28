@@ -5,9 +5,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    #region Singleton
+    #region Awake
 
     public static PlayerInteraction instance;
+    private PlayerInputActions inputActions;
 
     private void Awake()
     {
@@ -16,6 +17,19 @@ public class PlayerInteraction : MonoBehaviour
             Debug.LogWarning("More than one PlayerInteraction Object");
         }
         instance = this;
+        inputActions = new PlayerInputActions();
+    }
+
+    private void OnEnable()
+    {
+        inputActions.Player.Interact.performed += OnInteract;
+        inputActions.Player.Interact.Enable();
+    }
+    private void OnDisable()
+    {
+        inputActions.Player.Interact.performed -= OnInteract;
+        inputActions.Disable();
+        
     }
     #endregion
 
@@ -87,11 +101,14 @@ public class PlayerInteraction : MonoBehaviour
     }
 
 
-    void OnInteract(InputValue value)
+    public void OnInteract(InputAction.CallbackContext context)
     {
+        Debug.Log("Interact");
+        
+
         if (!interactionDisabled)
         {
-            if(interactables.Count == 0)
+            if (interactables.Count == 0)
             {
                 closestInteractable = null;
             }
@@ -102,6 +119,7 @@ public class PlayerInteraction : MonoBehaviour
             }
             CheckCloset();
         }
+
     }
 
 

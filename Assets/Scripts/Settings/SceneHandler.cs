@@ -53,7 +53,6 @@ public class SceneHandler : MonoBehaviour
 
     IEnumerator LoadLevel_Routine(LEVELS levelName)
     {
-        Debug.Log("clicked");
         transtition.SetTrigger("Start");
         yield return new WaitForSeconds(1.2f);
 

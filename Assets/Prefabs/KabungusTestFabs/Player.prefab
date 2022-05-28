@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: d1543bde9500d0440b40802e61cd215a, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -269,6 +269,18 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a5eee8c4-2dad-49a4-b2e0-b74a2fdd769a
     m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 59c0cdfb-f5b3-4411-b957-7f80c7cf8bd7
+    m_ActionName: Player/Inventory[/Keyboard/tab,/Keyboard/i,/XInputControllerWindows/select]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 95b75874-2ca1-4bf6-8e37-28e275d43832
+    m_ActionName: Player/TEST[/Keyboard/shift,/Keyboard/t]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 661d3ce9-5441-46ae-82cd-4c8c3c68ff17
+    m_ActionName: Player/Pause[/XInputControllerWindows/start,/Keyboard/p,/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Player
   m_DefaultActionMap: Player

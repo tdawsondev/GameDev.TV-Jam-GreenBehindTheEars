@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 /// <summary>
 /// Handles all player scripts;
 /// </summary>
 public class Player : MonoBehaviour
 {
-    #region Singleton
+    #region Awake
 
     public static Player instance;
-
+    private PlayerInputActions inputActions;
     private void Awake()
     {
         if (instance != null)
@@ -17,6 +18,21 @@ public class Player : MonoBehaviour
             Debug.LogWarning("More than one Player Object");
         }
         instance = this;
+        inputActions = new PlayerInputActions();
+    }
+    private void OnEnable()
+    {
+        inputActions.Player.TEST.performed += OnTEST;
+        inputActions.Player.TEST.Enable();
+        inputActions.Player.Pause.performed += OnPause;
+        inputActions.Player.Pause.Enable(); 
+    }
+    private void OnDisable()
+    {
+        inputActions.Player.TEST.performed -= OnTEST;
+        inputActions.Player.TEST.Disable();
+        inputActions.Player.Pause.performed -= OnPause;
+        inputActions.Player.Pause.Disable();
     }
     #endregion
 
@@ -49,13 +65,13 @@ public class Player : MonoBehaviour
         pi.EnableInteraction();
     }
 
-    public void OnTEST()
+    public void OnTEST(InputAction.CallbackContext context)
     {
         Debug.Log($"Test function initiated!!!");
         SceneHandler.instance.LoadLevel(SceneHandler.LEVELS.BoatScene);
     }
 
-    public void OnPause()
+    public void OnPause(InputAction.CallbackContext context)
     {
         Debug.Log($"Trying to pause.");
 
@@ -64,8 +80,8 @@ public class Player : MonoBehaviour
 
         if (pauseMenuUI == null) { return; }
         pauseMenuUI.SetActive(true);
-        
-        if(buttonHandler == null) { return; }
+
+        if (buttonHandler == null) { return; }
         buttonHandler.SetSelected();
 
     }
