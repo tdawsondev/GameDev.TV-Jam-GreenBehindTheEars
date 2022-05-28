@@ -14,7 +14,8 @@ public class SceneHandler : MonoBehaviour
         title = 0,
         ghostTownOverworld = 1,
         kabungusTest = 2,
-        dreamsTest = 3
+        dreamsTest = 3,
+        BoatScene = 4,
     }
 
     private void Start()
@@ -25,8 +26,7 @@ public class SceneHandler : MonoBehaviour
     public void LoadLevel(LEVELS levelName)
     {
         int buildIndex = -1;
-
-        switch(levelName)
+        switch (levelName)
         {
             case LEVELS.title:
                 SaveSystem.DeleteAllTemps(); // All Temps deleted when going to main menu
@@ -46,9 +46,9 @@ public class SceneHandler : MonoBehaviour
                 break;
         }
 
-        if(buildIndex == -1) { return; }
-
-        SceneManager.LoadScene(buildIndex);
+        //if(buildIndex == -1) { return; }
+        
+        SceneManager.LoadScene((int)levelName);
     }
 
     public void RestartLevel()

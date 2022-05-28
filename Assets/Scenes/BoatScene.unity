@@ -156,6 +156,7 @@ MonoBehaviour:
   audioHandler: {fileID: 1694188174}
   musicVolume: 0.517
   soundFXVolume: 0.5
+  sceneHandler: {fileID: 41034918}
 --- !u!4 &41034917
 Transform:
   m_ObjectHideFlags: 0

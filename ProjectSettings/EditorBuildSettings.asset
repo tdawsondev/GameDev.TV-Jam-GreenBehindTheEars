@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DreamsTest.unity
     guid: 93db667abbf86cc4e9e5754167bbedef
+  - enabled: 1
+    path: Assets/Scenes/BoatScene.unity
+    guid: 1a3ef1c0f05d64e4f92158d86fa442e9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7428c309e1006cb49a99049b0aefa1ce, type: 2}
