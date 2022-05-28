@@ -21,11 +21,14 @@ MonoBehaviour:
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 46224c9fc85c0bd45b676777fabc7b40, type: 2}
     tasks: []
+    requiredItem: {fileID: 0}
   - text: "Does that mean I\u2019m not ready to leave the world behind either?"
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 8b5955c6cd033284ea348d7be7ba7265, type: 2}
     tasks: []
+    requiredItem: {fileID: 0}
   - text: How do you know all this? Who are you?
     characterPoints: []
-    nextDialog: {fileID: 11400000}
+    nextDialog: {fileID: 11400000, guid: 8b5955c6cd033284ea348d7be7ba7265, type: 2}
     tasks: []
+    requiredItem: {fileID: 0}

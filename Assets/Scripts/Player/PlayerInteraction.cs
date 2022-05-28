@@ -91,6 +91,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (!interactionDisabled)
         {
+            if(interactables.Count == 0)
+            {
+                closestInteractable = null;
+            }
+
             if (closestInteractable != null)
             {
                 closestInteractable.Interact();

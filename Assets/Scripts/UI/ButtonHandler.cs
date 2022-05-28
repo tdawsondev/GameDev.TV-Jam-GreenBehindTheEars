@@ -28,7 +28,7 @@ public class ButtonHandler : MonoBehaviour
     public void Play()
     {
         if(sceneHandler == null) { return; }
-        sceneHandler.LoadLevel(SceneHandler.LEVELS.kabungusTest);
+        sceneHandler.LoadLevel(SceneHandler.LEVELS.BoatScene);
     }
 
     public void SetPause(bool state)

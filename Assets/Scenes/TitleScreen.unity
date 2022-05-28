@@ -2480,6 +2480,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1434554994971422794, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
+      propertyPath: backgroundMusicTracks.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: bbc383eb06faf4c48a0693cb93301f29, type: 3}
+    - target: {fileID: 1434554994971422794, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
+      propertyPath: backgroundMusicTracks.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b8dd5fa0621be244788bbf7d10f299b1, type: 3}
     - target: {fileID: 7682496738733096662, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2523,6 +2531,10 @@ PrefabInstance:
     - target: {fileID: 7682496738733096662, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7682496738733096663, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
+      propertyPath: musicVolume
+      value: 0.274
       objectReference: {fileID: 0}
     - target: {fileID: 7682496738733096664, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
       propertyPath: m_Name

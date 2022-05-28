@@ -21,4 +21,6 @@ MonoBehaviour:
     characterPoints: []
     nextDialog: {fileID: 0}
     tasks:
+    - {fileID: 11400000, guid: 0afe95f27ee277143af5377c4b19262e, type: 2}
     - {fileID: 11400000, guid: 14cd9f4667f7f6c41b238d02f825e613, type: 2}
+    requiredItem: {fileID: 0}
