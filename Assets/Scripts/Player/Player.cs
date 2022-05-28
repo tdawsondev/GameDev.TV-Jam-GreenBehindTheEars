@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
     public void OnTEST()
     {
         Debug.Log($"Test function initiated!!!");
-        GameSettings.Instance.GetSceneHandler().LoadLevel(SceneHandler.LEVELS.BoatScene);
+        SceneHandler.instance.LoadLevel(SceneHandler.LEVELS.BoatScene);
     }
 
     public void OnPause()

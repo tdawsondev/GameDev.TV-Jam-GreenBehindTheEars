@@ -7,7 +7,7 @@ public class SceneInteraction : Interactable
     public SceneHandler.LEVELS level;
     public override void Interact()
     {
-        GameSettings.Instance.GetSceneHandler().LoadLevel(level);
+        SceneHandler.instance.LoadLevel(level);
     }
 
 

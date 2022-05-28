@@ -17,6 +17,10 @@ public abstract class Interactable : MonoBehaviour
     private void Start()
     {
         outline = GetComponent<Outline>();
+        if(outline != null)
+        {
+            outline.enabled = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

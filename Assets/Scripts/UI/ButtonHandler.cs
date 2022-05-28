@@ -19,7 +19,7 @@ public class ButtonHandler : MonoBehaviour
 
         if(settings)
         {
-            sceneHandler = settings.GetSceneHandler();
+            sceneHandler = SceneHandler.instance;
         }
 
         SetSelected();
