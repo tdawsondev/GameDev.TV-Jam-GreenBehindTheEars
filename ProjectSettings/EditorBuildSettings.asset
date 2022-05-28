@@ -12,13 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/GhostTownOverworld.unity
     guid: 3740f6297fc564f4d82f2d3539943c86
   - enabled: 1
-    path: Assets/Scenes/KabungusTest.unity
-    guid: 70a5fa136a7e89747a994103623c4226
-  - enabled: 1
-    path: Assets/Scenes/DreamsTest.unity
-    guid: 93db667abbf86cc4e9e5754167bbedef
-  - enabled: 1
     path: Assets/Scenes/BoatScene.unity
     guid: 1a3ef1c0f05d64e4f92158d86fa442e9
+  - enabled: 1
+    path: Assets/Scenes/Houses/PlayerHouse.unity
+    guid: 18373eec1cf197a4f997d65b001c566a
+  - enabled: 1
+    path: Assets/Scenes/Houses/WinterHouse.unity
+    guid: abe584cf67ffdeb43b39e002db2f6518
+  - enabled: 1
+    path: Assets/Scenes/Houses/GravekeeperHouse.unity
+    guid: db869e5421bd0dc40b2d1fe9e8ef3b68
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7428c309e1006cb49a99049b0aefa1ce, type: 2}
