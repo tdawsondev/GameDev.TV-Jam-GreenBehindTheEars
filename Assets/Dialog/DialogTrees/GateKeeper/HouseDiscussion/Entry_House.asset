@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: GK_House_1 1
+  m_Name: Entry_House
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: "For most people here, their houses are not just regular buildings,
     they are projections of their minds - furnished in ways that capture the essence
     of who they are as people. \r\n"
+  italic: 0
+  bold: 0
   choices:
   - text: Next
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: e68cd783042481d48a9de5c47ac0cf59, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
+    requiredDialogs: []

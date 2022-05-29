@@ -10,14 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: GK_House_1 13
+  m_Name: Park_GK 8
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: '*The Gatekeeper lets out an exasperated sigh.*'
-  choices:
-  - text: Next
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 4aaadaf8b5bc1714e9f89fd05eaa0878, type: 2}
-    tasks: []
-    requiredItem: {fileID: 0}
-    requiredDialogs: []
+  Speaker: {fileID: 0}
+  dialogText: Words, words, words.
+  choices: []
