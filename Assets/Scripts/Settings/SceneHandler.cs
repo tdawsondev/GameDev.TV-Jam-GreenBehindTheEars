@@ -56,6 +56,12 @@ public class SceneHandler : MonoBehaviour
         transtition.SetTrigger("Start");
         yield return new WaitForSeconds(1.2f);
 
+        if (levelName == LEVELS.title)
+            settings.SetMusic(AudioHandler.AUDIO_MUSIC.title);
+
+        if(levelName == LEVELS.ghostTownOverworld)
+            settings.SetMusic(AudioHandler.AUDIO_MUSIC.town);
+
         SceneManager.LoadScene((int)levelName);
     }
 }

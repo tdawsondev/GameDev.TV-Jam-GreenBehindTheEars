@@ -23,6 +23,7 @@ public static class SaveSystem
     {
         File.WriteAllText(SAVE_FOLDER + saveFileName + ".txt", saveString);
     }
+
     public static void TempSave(string saveString, string saveFileName)
     {
         File.WriteAllText(TEMP_SAVE_FOLDER + saveFileName + ".txt", saveString);

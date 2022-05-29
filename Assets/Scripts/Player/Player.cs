@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+
 /// <summary>
 /// Handles all player scripts;
 /// </summary>
@@ -38,6 +40,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] GameObject pauseMenuUI = null;
     [SerializeField] ButtonHandler buttonHandler = null;
+    [SerializeField] PlayerSave playerSave = null;
 
     PlayerMovement pm;
     PlayerInteraction pi;
@@ -52,6 +55,13 @@ public class Player : MonoBehaviour
         settings = GameSettings.Instance;
         pm = PlayerMovement.instance;
         pi = PlayerInteraction.instance;
+
+        if (SceneManager.GetActiveScene().buildIndex == (int)SceneHandler.LEVELS.ghostTownOverworld)
+        {
+            Debug.Log($"Should be in the overworld. Calling for the last known position.");
+            gameObject.transform.position = playerSave.GetPlayerLastPosition();
+        }
+
     }
 
     public void DisablePlayerAction()
@@ -67,8 +77,15 @@ public class Player : MonoBehaviour
 
     public void OnTEST(InputAction.CallbackContext context)
     {
-        Debug.Log($"Test function initiated!!!");
-        SceneHandler.instance.LoadLevel(SceneHandler.LEVELS.BoatScene);
+        Debug.Log($"Test function initiated!!! Should save the player position.");
+        SaveMyPosition();
+        //SceneHandler.instance.LoadLevel(SceneHandler.LEVELS.BoatScene);
+    }
+
+    public void SaveMyPosition()
+    {
+        Debug.Log($"saving my position");
+        playerSave.OnSave();
     }
 
     public void OnPause(InputAction.CallbackContext context)

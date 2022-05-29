@@ -8,7 +8,7 @@ public class AudioHandler : MonoBehaviour
 
     public enum AUDIO_MUSIC
     {
-        spooky = 0,
+        title = 0,
         town = 1,
         none
     }
@@ -36,7 +36,7 @@ public class AudioHandler : MonoBehaviour
         if(musicAudioSource == null) { return; }
 
         SetMusicVolume(settings.GetMusicVolume());
-        SetBackgroundMusic(AUDIO_MUSIC.spooky);
+        SetBackgroundMusic(AUDIO_MUSIC.title);
 
         if(soundFXAudioSource == null) { return; }
 
@@ -71,7 +71,7 @@ public class AudioHandler : MonoBehaviour
             case AUDIO_MUSIC.none:
                 musicAudioSource.clip = null;
                 break;
-            case AUDIO_MUSIC.spooky:
+            case AUDIO_MUSIC.title:
                 musicAudioSource.clip = backgroundMusicTracks[0];
                 break;
             case AUDIO_MUSIC.town:

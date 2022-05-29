@@ -14,7 +14,7 @@ public abstract class Interactable : MonoBehaviour
     public abstract void Interact();
 
 
-    private void Start()
+    protected virtual void Start()
     {
         outline = GetComponent<Outline>();
         if(outline != null)
