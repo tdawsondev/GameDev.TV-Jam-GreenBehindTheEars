@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: GK_House_1 6
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: "Actually I\u2019ve lost count of what year it is in your world. You
+    could call me your very great grandfather, or you can simply refer to me as Gatekeeper,
+    for that is the nature of my role here. \r"
+  choices:
+  - text: What does this curse mean?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 637632a0e90fa2a40b052d5f07f13aea, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+  - text: "I really don\u2019t know what to make of this whole thing."
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 637632a0e90fa2a40b052d5f07f13aea, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+  - text: "Wait, but I\u2019m nothing like you?"
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: c1dc9fccdd37bee4196e0f8008b82685, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
