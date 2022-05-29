@@ -70,9 +70,15 @@ public class Conversation : MonoBehaviour
             }
             if(choice.requiredDialogs.Count != 0)
             {
+                bool dontAdd = false;
                 foreach(DialogObject d in choice.requiredDialogs)
                 {
-                    //check state for dialog choices.
+                    if(!StateManager.instance.HasCompletedDialog(d))
+                        dontAdd = true;
+                }
+                if (dontAdd)
+                {
+                    continue;
                 }
             }
                 
@@ -123,6 +129,7 @@ public class Conversation : MonoBehaviour
         {
             UpdateDialogueUI();
             DialogueMenu.SetActive(true);
+            StateManager.instance.AddCompletedDialog(dialogObject);
         }
         else
         {
@@ -137,6 +144,7 @@ public class Conversation : MonoBehaviour
         if (pm == null) { Debug.Log($"No player movement connected."); return; }
 
         pm.enabled = true;
+        StateManager.instance.SaveCompletedDialogs();
 
     }
 

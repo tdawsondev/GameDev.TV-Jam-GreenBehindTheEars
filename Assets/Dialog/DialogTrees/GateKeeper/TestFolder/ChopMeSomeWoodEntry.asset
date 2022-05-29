@@ -12,22 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: ChopMeSomeWoodEntry
   m_EditorClassIdentifier: 
+  id: 
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: I need you to chop me some wood, boy. The fire burns low and my ghostly
     bones sense a chill.
+  italic: 0
+  bold: 0
   choices:
   - text: I would, but I don't have an axe.
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 24ec23179ac7c7a4f9c225397d81d779, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
+    requiredDialogs: []
   - text: Sure, I've got my trusty Axe right here? Show me the forst old timer!
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 18425bb13f637684b935be94b13b3289, type: 2}
     tasks: []
     requiredItem: {fileID: 11400000, guid: 8df311f2d17c40947940ed56a5296f97, type: 2}
+    requiredDialogs: []
   - text: That's mighty rude. I'm leaving.
     characterPoints: []
     nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
+    requiredDialogs: []

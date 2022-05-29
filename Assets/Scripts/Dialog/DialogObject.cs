@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [System.Serializable]
 public class CharacterPoint
@@ -31,11 +32,24 @@ public class Choice
 [CreateAssetMenu(fileName = "New DialogOption", menuName = "Dialog/Dialog")]
 public class DialogObject : ScriptableObject
 {
+    public string id = "";
     public DialogCharacter Speaker = null;
     [TextArea(3, 8)]
     public string dialogText = "Words, words, words.";
     public bool italic, bold = false;
     public List<Choice> choices = new List<Choice>();
-    
-    
+
+    private void Awake()
+    {
+        if(id == "")
+        {
+            GenerateID();
+        }
+    }
+
+    public void GenerateID()
+    {
+        id = new Guid().ToString();
+    }
 }
+
