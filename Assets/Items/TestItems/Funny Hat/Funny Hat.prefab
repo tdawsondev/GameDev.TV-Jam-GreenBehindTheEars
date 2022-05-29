@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3412023575276109985}
   - component: {fileID: 3412023575276109996}
   m_Layer: 0
-  m_Name: BlueCube
+  m_Name: Funny Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
