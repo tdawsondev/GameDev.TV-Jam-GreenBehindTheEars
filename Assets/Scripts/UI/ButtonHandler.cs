@@ -17,17 +17,16 @@ public class ButtonHandler : MonoBehaviour
     {
         settings = GameSettings.Instance;
 
-        if(settings)
-        {
-            sceneHandler = SceneHandler.instance;
-        }
+        sceneHandler = SceneHandler.instance;
 
         SetSelected();
     }
 
     public void Play()
     {
+
         if(sceneHandler == null) { return; }
+
         sceneHandler.LoadLevel(SceneHandler.LEVELS.BoatScene);
     }
 

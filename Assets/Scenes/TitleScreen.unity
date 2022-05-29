@@ -942,6 +942,7 @@ GameObject:
   - component: {fileID: 399175214}
   - component: {fileID: 399175213}
   - component: {fileID: 399175212}
+  - component: {fileID: 399175215}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1014,6 +1015,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &399175215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399175211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &446922315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,6 +1645,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921743426}
   m_CullTransparentMesh: 1
+--- !u!114 &995964025 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1556094241, guid: fe072bf8f0f2416408d09c584e849b4c, type: 3}
+  m_PrefabInstance: {fileID: 35667121}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ca83c877387b3499c723dfdff822f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1034401599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,11 +2659,11 @@ PrefabInstance:
     - target: {fileID: 1434554994971422794, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
       propertyPath: backgroundMusicTracks.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: bbc383eb06faf4c48a0693cb93301f29, type: 3}
+      objectReference: {fileID: 8300000, guid: 83326740a3e6db14eb6419350206eafe, type: 3}
     - target: {fileID: 1434554994971422794, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
       propertyPath: backgroundMusicTracks.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: b8dd5fa0621be244788bbf7d10f299b1, type: 3}
+      objectReference: {fileID: 8300000, guid: bbc383eb06faf4c48a0693cb93301f29, type: 3}
     - target: {fileID: 7682496738733096662, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2667,6 +2712,10 @@ PrefabInstance:
       propertyPath: musicVolume
       value: 0.274
       objectReference: {fileID: 0}
+    - target: {fileID: 7682496738733096663, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
+      propertyPath: sceneHandler
+      value: 
+      objectReference: {fileID: 995964025}
     - target: {fileID: 7682496738733096664, guid: 741ec86d3f3f2554384661c8a8c181ad, type: 3}
       propertyPath: m_Name
       value: GameSettings

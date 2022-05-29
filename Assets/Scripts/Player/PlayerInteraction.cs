@@ -103,8 +103,6 @@ public class PlayerInteraction : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        Debug.Log("Interact");
-        
 
         if (!interactionDisabled)
         {

@@ -75,6 +75,16 @@ public class PlayerSave : MonoBehaviour
         return loadedData;
     }
 
+    public void ResetToDockPosition()
+    {
+        SaveData saveData = new SaveData();
+
+        saveData.playerPosition = dockPosition;
+
+        string json = JsonUtility.ToJson(saveData);
+        SaveSystem.TempSave(json, saveString_PlayerPosition);
+
+    }
 
 
 }

@@ -46,8 +46,6 @@ public class Player : MonoBehaviour
     PlayerInteraction pi;
 
     GameSettings settings = null;
-    
-
 
     // Start is called before the first frame update
     void Start()
@@ -56,9 +54,13 @@ public class Player : MonoBehaviour
         pm = PlayerMovement.instance;
         pi = PlayerInteraction.instance;
 
+        if (SceneManager.GetActiveScene().buildIndex == (int)SceneHandler.LEVELS.BoatScene)
+        {
+            playerSave.ResetToDockPosition();
+        }
+
         if (SceneManager.GetActiveScene().buildIndex == (int)SceneHandler.LEVELS.ghostTownOverworld)
         {
-            Debug.Log($"Should be in the overworld. Calling for the last known position.");
             gameObject.transform.position = playerSave.GetPlayerLastPosition();
         }
 
