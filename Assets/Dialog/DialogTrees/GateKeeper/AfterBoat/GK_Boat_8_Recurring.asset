@@ -15,9 +15,12 @@ MonoBehaviour:
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: 'Are you incapable of following basic instructions? Come talk with
     me after you have been to the house. '
+  italic: 1
+  bold: 1
   choices:
   - text: Exit
     characterPoints: []
     nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
+    requiredDialogs: []

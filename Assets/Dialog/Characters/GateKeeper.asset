@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: GateKeeper
   m_EditorClassIdentifier: 
   characterName: Grave Keeper
-  characterImage: {fileID: 21300000, guid: c72e6088bdf9a40489972c44d81b6051, type: 3}
+  characterImage: {fileID: 21300000, guid: e6ec7ce0ced9a5c4e84b920d01e4f811, type: 3}

@@ -24,6 +24,7 @@ public class Choice
     public DialogObject nextDialog;
     public List<DialogTask> tasks = new List<DialogTask>();
     public Item requiredItem;
+    public List<DialogObject> requiredDialogs;
 }
 
 
@@ -33,6 +34,8 @@ public class DialogObject : ScriptableObject
     public DialogCharacter Speaker = null;
     [TextArea(3, 8)]
     public string dialogText = "Words, words, words.";
+    public bool italic, bold = false;
     public List<Choice> choices = new List<Choice>();
+    
     
 }

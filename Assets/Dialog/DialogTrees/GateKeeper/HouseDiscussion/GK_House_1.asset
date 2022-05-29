@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: GK_House_1
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: This is irrelevant dialogue don't use this.
   choices: []

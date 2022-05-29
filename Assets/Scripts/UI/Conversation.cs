@@ -68,10 +68,14 @@ public class Conversation : MonoBehaviour
                     continue;
                 }
             }
+            if(choice.requiredDialogs.Count != 0)
+            {
+                foreach(DialogObject d in choice.requiredDialogs)
+                {
+                    //check state for dialog choices.
+                }
+            }
                 
-
-
-
             GameObject dialogueObject = Instantiate(DialogueChoiceObject);
             dialogueObject.transform.SetParent(DialogueOptionsParent.transform);
             dialogueObject.transform.localScale = new Vector3(1, 1, 1);
@@ -100,6 +104,14 @@ public class Conversation : MonoBehaviour
     {
         PopulateDialogueOptions();
         dialogText.text = dialogObject.dialogText;
+        dialogText.fontStyle = FontStyles.Normal;
+        if (dialogObject.bold)
+            dialogText.fontStyle = FontStyles.Bold;
+        if (dialogObject.italic)
+            dialogText.fontStyle = FontStyles.Italic;
+        if (dialogObject.bold && dialogObject.italic)
+            dialogText.fontStyle = FontStyles.Bold | FontStyles.Italic;
+        
         speakerText.text = dialogObject.Speaker.characterName;
         speakerImage.sprite = dialogObject.Speaker.characterImage;
     }
