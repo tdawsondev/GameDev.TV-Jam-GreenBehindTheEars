@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: Park_GK 4
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   id: 82ff0f30-fe73-495e-b512-591e0250bdcd
+=======
+  id: 52d3ed3c-4dc8-431a-b37f-82cdc694ddf7
+>>>>>>> Stashed changes
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: 'Exactly. The moment of your arrival was a notable memory for me, as
     you too share the curse I bear. Though I had a hunch that the impact it had would
@@ -24,7 +28,11 @@ MonoBehaviour:
   - text: Next
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 69a5b1f080302e94dbe67397da347f56, type: 2}
+<<<<<<< Updated upstream
     tasks:
     - {fileID: 11400000, guid: 1d5ed74f556ee20409cb038d88feeff4, type: 2}
+=======
+    tasks: []
+>>>>>>> Stashed changes
     requiredItem: {fileID: 0}
     requiredDialogs: []

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: Final 3
+  m_EditorClassIdentifier: 
+  id: 06d91256-6b09-4ed6-9935-7fd3d0440d65
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  dialogText: Thank you, both of you. I do not think I would have remembered who
+    I was without you.
+  italic: 0
+  bold: 0
+  choices:
+  - text: I'm glad to see you feeling better.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: bc91744fa5ffad34ca0bd3e87f20ae62, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: It was a pleasure.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: bc91744fa5ffad34ca0bd3e87f20ae62, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Remember when you told me to go away and never talk to you again?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 1817b2e0a36133143a34be30c5c7e160, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

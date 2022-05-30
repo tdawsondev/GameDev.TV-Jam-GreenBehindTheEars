@@ -14,17 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: dc10d01d-0288-4cd4-a961-f9869ce1c095
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: "There is someone who arrived here not long before you that I think
-    would appreciate the amusing headwear currently in your possession. I had been
-    intending to gift it to her, but I believe it might be helpful for all involved
-    if you were to do this on my behalf. She lives down the road to the West of here.
-    \r"
+  dialogText: Exactly, well done.
   italic: 0
   bold: 0
   choices:
-  - text: Next
+  - text: Who does this belong to?
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: dc5ba53bf0d91b74b8fc08efdeefba1c, type: 2}
+    nextDialog: {fileID: 11400000, guid: 04d53273ba62b7549bf0ba29d75cc1e2, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: What do you want me to do with it?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 04d53273ba62b7549bf0ba29d75cc1e2, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

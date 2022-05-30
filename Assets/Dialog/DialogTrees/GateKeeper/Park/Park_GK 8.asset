@@ -22,7 +22,7 @@ MonoBehaviour:
   italic: 0
   bold: 0
   choices:
-  - text: Next
+  - text: Exit
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: dc5ba53bf0d91b74b8fc08efdeefba1c, type: 2}
     tasks:

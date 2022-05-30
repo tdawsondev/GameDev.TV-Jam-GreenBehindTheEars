@@ -10,23 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: End_Park_GK
+  m_Name: Final 5
   m_EditorClassIdentifier: 
-  id: b3c47581-7109-4c4d-ae8a-307264e3d2f7
-  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 'Come find me outside my house afterwards. Perhaps you may even be
-    ready to learn about the curse. '
+  id: 06d91256-6b09-4ed6-9935-7fd3d0440d65
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  dialogText: 'Haha yes, you''ll have to forgive me. I was... well, you know. '
   italic: 0
   bold: 0
   choices:
-  - text: Exit
+  - text: Next
     characterPoints: []
-    nextDialog: {fileID: 0}
-<<<<<<< Updated upstream
-    tasks:
-    - {fileID: 11400000, guid: 2ec769512aba4a2488a5438e16e95fae, type: 2}
-=======
+    nextDialog: {fileID: 11400000, guid: bc91744fa5ffad34ca0bd3e87f20ae62, type: 2}
     tasks: []
->>>>>>> Stashed changes
     requiredItem: {fileID: 0}
     requiredDialogs: []

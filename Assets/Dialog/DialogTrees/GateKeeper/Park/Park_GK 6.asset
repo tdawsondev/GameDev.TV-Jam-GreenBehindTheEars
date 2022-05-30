@@ -32,3 +32,12 @@ MonoBehaviour:
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
+<<<<<<< Updated upstream
+=======
+  - text: Do you mean this hat?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 03b2e59046d20bc4e9bc534995c78286, type: 2}
+    tasks: []
+    requiredItem: {fileID: 11400000, guid: c640fe7c219a36a4eb4bf10aa9555805, type: 2}
+    requiredDialogs: []
+>>>>>>> Stashed changes
