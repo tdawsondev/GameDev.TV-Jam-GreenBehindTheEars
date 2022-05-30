@@ -16,6 +16,6 @@ MonoBehaviour:
   description: A violin case covered in a thick layer of dust. It looks to be very
     high quality, and the violin still seems to be inside. It has an aura of passion
     and contentment, as if its owner truly loved it.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e8fdb3442caaa314b942beb8bb918d8a, type: 3}
   ID: 000099
-  prefab: {fileID: 0}
+  prefab: {fileID: 169423974069450106, guid: 3dc1a5f17f6366a468df2c874566f54b, type: 3}

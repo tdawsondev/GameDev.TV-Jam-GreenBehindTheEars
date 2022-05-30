@@ -162,11 +162,12 @@ public class TownStateManager : StateManager
     public void AfterHouseConvo()
     {
         PlayerPrefs.SetInt("AfterHouseConvo", 1);
-        gk.SetDestination(gk.houseLocation);
+        //gk.SetDestination(gk.houseLocation);
         gk.SetDialog(gk.winterHouseRecurring);
         winterDoorDialog.SetDisable();
         winterDoorScene.SetEnable();
-        SetAfterInsideHouse(); // WILL BE MOVED AFTER INSIDE SCENE
+        
+        //SetAfterInsideHouse(); // WILL BE MOVED AFTER INSIDE SCENE
     }
 
     public void SetAfterInsideHouse() // after end house

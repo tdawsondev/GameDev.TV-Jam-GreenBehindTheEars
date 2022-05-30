@@ -9,5 +9,6 @@ public class DialogueInteractable : Interactable
     public override void Interact()
     {
         Conversation.instance.OpenDialog(dialog);
+        PlayerInteraction.instance.RemoveInteract(this);
     }
 }

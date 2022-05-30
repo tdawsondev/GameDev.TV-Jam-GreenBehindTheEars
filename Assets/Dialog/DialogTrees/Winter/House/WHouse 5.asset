@@ -35,4 +35,5 @@ MonoBehaviour:
     nextDialog: {fileID: 11400000, guid: 1b94c05f6ff435c4493f3f85fd77e1bd, type: 2}
     tasks: []
     requiredItem: {fileID: 11400000, guid: 1d462d08bb00b994da3044d7065eeedf, type: 2}
-    requiredDialogs: []
+    requiredDialogs:
+    - {fileID: 11400000, guid: 45655e3c620367b44b7e5f4f3b55269f, type: 2}

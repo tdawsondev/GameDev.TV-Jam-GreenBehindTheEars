@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: END_House
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
+  id: 125fb532-9f05-4196-8a00-575aac2ad25d
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
   dialogText: 'Ushering you outside, Winter closes the door behind you. '
   italic: 1
   bold: 0
-  choices: []
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks:
+    - {fileID: 11400000, guid: e755103301b4c9648ae71da15422b02a, type: 2}
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
