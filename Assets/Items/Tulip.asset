@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df0ae290f7a41fb4ebaf7d23ef129c28, type: 3}
-  m_Name: RedCube
+  m_Name: Tulip
   m_EditorClassIdentifier: 
-  itemName: Cube
-  description: This is a test cube to test out the inventory system.
-  icon: {fileID: 21300000, guid: fe34d91f486a8bb4088d7a6767f20542, type: 3}
-  ID: 000002
-  prefab: {fileID: 1900690912996202612, guid: 987861097287f8f4d99c92112101eca4, type: 3}
+  itemName: Tulip
+  description: A simple flower. Its colours seem even more vibrant than the flowers
+    you remember in life.
+  icon: {fileID: 0}
+  ID: 000093
+  prefab: {fileID: 0}
