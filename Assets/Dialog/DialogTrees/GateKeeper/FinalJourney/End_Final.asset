@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 'I think your friend from the boat you arrived on might be ready to
-    talk. '
+  dialogText: I think there is someone else that I would really like for you to meet.
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: DEMO END
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

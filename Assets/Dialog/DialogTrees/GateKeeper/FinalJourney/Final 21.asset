@@ -14,20 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 06d91256-6b09-4ed6-9935-7fd3d0440d65
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 'It does. And I must say, I am glad to have you here. You''ve shown
-    much more promise than the others before you. '
+  dialogText: 'Well, you are not the first person I have had the pleasure of showing
+    the ropes. It is a family curse after all. '
   italic: 0
   bold: 0
   choices:
-  - text: I appreciate that a lot.
+  - text: Wait so there were people between us? What happened to them?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 44355de83caa1b849b99dacd19f06d10, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: OTHERS???
+  - text: Other members of our family have been here? Why haven't they replaced you?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 44355de83caa1b849b99dacd19f06d10, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Are any of them still in the town? Was my crazy Great Uncle here?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 44355de83caa1b849b99dacd19f06d10, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

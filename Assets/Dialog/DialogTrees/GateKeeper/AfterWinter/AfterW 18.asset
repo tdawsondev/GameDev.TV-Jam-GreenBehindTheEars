@@ -29,7 +29,7 @@ MonoBehaviour:
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 994db70c537fe054a873db1b7e89ffb8, type: 2}
     tasks: []
-    requiredItem: {fileID: 0}
+    requiredItem: {fileID: 11400000, guid: 8df311f2d17c40947940ed56a5296f97, type: 2}
     requiredDialogs: []
   - text: Wait how many people do we have to help?
     characterPoints: []

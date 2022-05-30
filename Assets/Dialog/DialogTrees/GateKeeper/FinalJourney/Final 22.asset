@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 06d91256-6b09-4ed6-9935-7fd3d0440d65
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 'It does. And I must say, I am glad to have you here. You''ve shown
-    much more promise than the others before you. '
+  dialogText: All excellent questions. But I am afraid it is not yet the time for
+    them; there is something that requires our attention.
   italic: 0
   bold: 0
   choices:
-  - text: I appreciate that a lot.
+  - text: I will get answers when I am ready, I suppose.
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: c9226718aac1d0a4697bd4b57cf653ba, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: OTHERS???
+  - text: Are you always like this, old man?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: c9226718aac1d0a4697bd4b57cf653ba, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

@@ -14,13 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 06d91256-6b09-4ed6-9935-7fd3d0440d65
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: Words, words, words.
+  dialogText: Aha, so impatient. Just like the others before you.
   italic: 0
   bold: 0
   choices:
-  - text: Next
+  - text: I'm just really excited to be able to help more people.
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: c0022729ffdb82a40aeae333fcf4b84a, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: OTHERS??? What do you mean others?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 321b8c68f0aae86409f50811f5f48990, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
