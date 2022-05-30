@@ -10,5 +10,9 @@ public class Winter_Character : Character
     public DialogObject tulipsRecurring;
 
     public DialogObject violinRecurring;
+    public DialogObject entryENC;
+
+    [Header("Destinations")]
+    public Transform boatLocation;
 
 }

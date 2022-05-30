@@ -17,4 +17,4 @@ MonoBehaviour:
     They seem happy together! It has an aura of bittersweet memories.
   icon: {fileID: 21300000, guid: 793469e1689f49446a2a5f0010c8ad71, type: 3}
   ID: 000095
-  prefab: {fileID: 0}
+  prefab: {fileID: 488244974691926349, guid: 2d66f9a71f507a142ad2b7834fdbb9c2, type: 3}

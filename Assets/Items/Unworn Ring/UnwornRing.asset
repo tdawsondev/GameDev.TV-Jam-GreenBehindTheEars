@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Unworn Wedding Ring
   description: "A dull and dusty wedding ring. It clearly hasn\u2019t been attended
     to in many years. An overwhelming sense of loss emanates from it."
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 2af162cddd05b794abe48be4ffd56532, type: 3}
   ID: 000105
-  prefab: {fileID: 0}
+  prefab: {fileID: 5570631435778174094, guid: 18097399f7de1ba48a4651b38cf30913, type: 3}

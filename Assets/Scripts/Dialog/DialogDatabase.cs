@@ -10,7 +10,9 @@ public class DialogDatabase : ScriptableObject
     public List<DialogObject> dialogObjects = new List<DialogObject>();
     public void Awake()
     {
-      RefreshList();
+#if UNITY_EDITOR
+        RefreshList();
+#endif
     }
     public DialogObject GetObjectById(string id)
     {
@@ -21,6 +23,7 @@ public class DialogDatabase : ScriptableObject
         }
         return null;
     }
+#if UNITY_EDITOR
     public void RefreshList()
     {
         dialogObjects = new List<DialogObject>(GetAllInstances<DialogObject>());
@@ -42,4 +45,5 @@ public class DialogDatabase : ScriptableObject
 
         return a;
     }
+#endif
 }

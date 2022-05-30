@@ -19,6 +19,6 @@ MonoBehaviour:
     few years have been really difficult for me. I\u2019m sorry, but I can\u2019t
     live your life for you and live mine at the same time. So, this is goodbye. I
     wish you all the best, I hope you can forgive me. - Mary\u201D"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b95a41723a3151b468519e383638376d, type: 3}
   ID: 000097
-  prefab: {fileID: 0}
+  prefab: {fileID: 7818750864438304913, guid: 166e4049b2a5a444280585c82678ab53, type: 3}
