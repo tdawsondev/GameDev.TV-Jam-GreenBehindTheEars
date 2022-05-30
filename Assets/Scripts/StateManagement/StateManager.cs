@@ -36,7 +36,6 @@ public class StateManager : MonoBehaviour
 
     public void SaveCompletedDialogs()
     {
-        Debug.Log("Saving Dialog");
         string saveData = "";
         foreach (DialogObject dObj in completedDialogs)
         {
