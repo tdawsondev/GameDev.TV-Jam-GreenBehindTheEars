@@ -11,11 +11,14 @@ public class Gatekeeper_Character : Character
     public DialogObject parkEntry;
     public DialogObject parkBeforeHat;
     public DialogObject parkRecurring;
+    public DialogObject tulipEntry;
+    public DialogObject tulipRecurring;
 
 
 
     [Header("Destinations")]
     public Transform parkLocation;
+    public Transform houseLocation;
 
 
 

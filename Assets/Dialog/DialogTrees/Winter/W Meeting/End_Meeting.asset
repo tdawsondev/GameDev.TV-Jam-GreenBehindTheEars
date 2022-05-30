@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: End_Meeting
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
+  id: 98a3ebbd-641c-4a99-808f-12d4417c5017
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
   dialogText: 'Um... sorry. You should probably go now anyway. Thank you for the
     hat!
@@ -24,6 +24,7 @@ MonoBehaviour:
   - text: Exit
     characterPoints: []
     nextDialog: {fileID: 0}
-    tasks: []
+    tasks:
+    - {fileID: 11400000, guid: 1d5ed74f556ee20409cb038d88feeff4, type: 2}
     requiredItem: {fileID: 0}
     requiredDialogs: []

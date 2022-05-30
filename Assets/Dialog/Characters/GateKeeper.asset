@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77cf46c4906b40041b94be307a9815fd, type: 3}
   m_Name: GateKeeper
   m_EditorClassIdentifier: 
-  characterName: Grave Keeper
+  characterName: Gatekeeper
   characterImage: {fileID: 21300000, guid: e6ec7ce0ced9a5c4e84b920d01e4f811, type: 3}

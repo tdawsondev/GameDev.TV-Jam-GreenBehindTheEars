@@ -5,6 +5,8 @@ using UnityEngine;
 public class TownStateManager : StateManager
 {
     [SerializeField] Gatekeeper_Character gk = null;
+    [SerializeField] Winter_Character winter = null;
+    public GameObject winterGameObject;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -22,17 +24,30 @@ public class TownStateManager : StateManager
         }
         if (PlayerPrefs.GetInt("GKArrivePark") == 1)
         {
+            gk.transform.position = gk.parkLocation.position;
             gk.SetDialog(gk.parkEntry);
         }
         if (PlayerPrefs.GetInt("GKBeforeHat") == 1)
         {
+            gk.transform.position = gk.parkLocation.position;
             gk.SetDialog(gk.parkBeforeHat);
         }
         if (PlayerPrefs.GetInt("GKAfterHat") == 1)
         {
-            gk.SetDialog(gk.parkRecurring);
+            gk.transform.position = gk.houseLocation.position;
+            SetParkAfterHat();
         }
+        if (PlayerPrefs.GetInt("WAfterEntry") == 1)
+        {
+            SetAfterWinterEntry();
+        }
+        if (PlayerPrefs.GetInt("GKTulipEntry") == 1)
+        {
+            SetAfterGKTulipEntry();
+        }
+
     }
+
 
     // Update is called once per frame
     void Update()
@@ -50,10 +65,15 @@ public class TownStateManager : StateManager
     {
         gk.SetDestination(gk.parkLocation, AfterArriveatPark);
     }
+    public void GK_WalkToHouse()
+    {
+        gk.SetDestination(gk.houseLocation);
+    }
 
     public void AfterArriveatPark()
     {
         PlayerPrefs.SetInt("GKArrivePark", 1);
+        
         gk.SetDialog(gk.parkEntry);
     }
 
@@ -66,5 +86,19 @@ public class TownStateManager : StateManager
     {
         PlayerPrefs.SetInt("GKAfterHat", 1);
         gk.SetDialog(gk.parkRecurring);
+        winterGameObject.SetActive(true);
+    }
+
+    public void SetAfterWinterEntry()
+    {
+        PlayerPrefs.SetInt("WAfterEntry", 1);
+        winter.SetDialog(winter.entryTulips);
+        gk.SetDialog(gk.tulipEntry);
+    }
+
+    public void SetAfterGKTulipEntry()
+    {
+        PlayerPrefs.SetInt("GKTulipEntry", 1);
+        gk.SetDialog(gk.tulipRecurring);
     }
 }

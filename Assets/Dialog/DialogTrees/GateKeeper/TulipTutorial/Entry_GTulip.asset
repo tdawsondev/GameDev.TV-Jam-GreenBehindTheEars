@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: Entry_GTulip
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
+  id: 1b5f6143-54a5-422d-8433-b94a0b104483
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: 'Well, how did it go? '
   italic: 0
@@ -21,12 +21,14 @@ MonoBehaviour:
   - text: She seemed nice, she liked the hat.
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 83ae2214694e8024b9b6e62d2fc2745c, type: 2}
-    tasks: []
+    tasks:
+    - {fileID: 11400000, guid: c2f5664ef7239d24d9ebc4b6a796f182, type: 2}
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: "She didn\u2019t really say much, but she talked a bit about her tulips"
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 0214ac1efad46cd4eacc75cc4a3df4b2, type: 2}
-    tasks: []
+    tasks:
+    - {fileID: 11400000, guid: c2f5664ef7239d24d9ebc4b6a796f182, type: 2}
     requiredItem: {fileID: 0}
     requiredDialogs: []

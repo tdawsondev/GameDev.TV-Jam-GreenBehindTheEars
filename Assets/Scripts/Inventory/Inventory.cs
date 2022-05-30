@@ -44,6 +44,7 @@ public class Inventory : MonoBehaviour
     {
         items.Add(i);
         HUDController.instance.AddItemNotification(i);
+        SaveInventoryTemp();
     }
 
     public bool RemoveItem(Item i)
