@@ -14,13 +14,21 @@ public abstract class Interactable : MonoBehaviour
     public abstract void Interact();
 
 
-    private void Start()
+    protected virtual void Start()
     {
         outline = GetComponent<Outline>();
+        if(outline != null)
+        {
+            outline.enabled = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!enabled)
+        {
+            return;
+        }
         if(other.tag == "Player")
         {
             PlayerInteraction.instance.AddInteract(this);
@@ -29,6 +37,10 @@ public abstract class Interactable : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (!enabled)
+        {
+            return;
+        }
 
         if (other.tag == "Player")
         {

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: GK_House_1 2
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: ' If someone trusts you enough to let you into their house, they are
+    not merely letting you into their abode, they are sharing with you their innermost
+    selves - their regrets, their desires, everything that defines who they are as
+    people. '
+  choices:
+  - text: "But my house doesn\u2019t seem anything like me."
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: f9e54f68da193d94a806b287a0bb4b74, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+  - text: Can I come to your house?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: f9e54f68da193d94a806b287a0bb4b74, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+  - text: "ou still haven\u2019t told me who you are, or how you know this."
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 04bab075dba79ad419716ef74c28b10f, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}

@@ -68,10 +68,20 @@ public class Conversation : MonoBehaviour
                     continue;
                 }
             }
+            if(choice.requiredDialogs.Count != 0)
+            {
+                bool dontAdd = false;
+                foreach(DialogObject d in choice.requiredDialogs)
+                {
+                    if(!StateManager.instance.HasCompletedDialog(d))
+                        dontAdd = true;
+                }
+                if (dontAdd)
+                {
+                    continue;
+                }
+            }
                 
-
-
-
             GameObject dialogueObject = Instantiate(DialogueChoiceObject);
             dialogueObject.transform.SetParent(DialogueOptionsParent.transform);
             dialogueObject.transform.localScale = new Vector3(1, 1, 1);
@@ -100,6 +110,14 @@ public class Conversation : MonoBehaviour
     {
         PopulateDialogueOptions();
         dialogText.text = dialogObject.dialogText;
+        dialogText.fontStyle = FontStyles.Normal;
+        if (dialogObject.bold)
+            dialogText.fontStyle = FontStyles.Bold;
+        if (dialogObject.italic)
+            dialogText.fontStyle = FontStyles.Italic;
+        if (dialogObject.bold && dialogObject.italic)
+            dialogText.fontStyle = FontStyles.Bold | FontStyles.Italic;
+        
         speakerText.text = dialogObject.Speaker.characterName;
         speakerImage.sprite = dialogObject.Speaker.characterImage;
     }
@@ -111,6 +129,7 @@ public class Conversation : MonoBehaviour
         {
             UpdateDialogueUI();
             DialogueMenu.SetActive(true);
+            StateManager.instance.AddCompletedDialog(dialogObject);
         }
         else
         {
@@ -125,6 +144,7 @@ public class Conversation : MonoBehaviour
         if (pm == null) { Debug.Log($"No player movement connected."); return; }
 
         pm.enabled = true;
+        StateManager.instance.SaveCompletedDialogs();
 
     }
 

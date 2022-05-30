@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: GK_Boat_7END
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: Your house anchors you to this place, and will be at the centre of
+    your interaction with it. Go to it now, and I will meet you outside when you
+    have done so. There will be answers for your questions then.
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks:
+    - {fileID: 11400000, guid: 0afe95f27ee277143af5377c4b19262e, type: 2}
+    - {fileID: 11400000, guid: 14cd9f4667f7f6c41b238d02f825e613, type: 2}
+    requiredItem: {fileID: 0}

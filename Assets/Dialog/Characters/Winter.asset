@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Winter
   m_EditorClassIdentifier: 
   characterName: Winter
-  characterImage: {fileID: 21300000, guid: ea776fd530e73644aa946958872f7b71, type: 3}
+  characterImage: {fileID: 21300000, guid: 75bd04a0759995542944773d1a4d54c9, type: 3}

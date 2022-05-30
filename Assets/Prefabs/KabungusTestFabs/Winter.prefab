@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3715018316721425311}
   - component: {fileID: 3715018316721425310}
   - component: {fileID: 3715018316721425299}
+  - component: {fileID: 900468995}
   m_Layer: 0
   m_Name: Winter
   m_TagString: Untagged
@@ -104,8 +105,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 3715018316721425311}
-  message: Talk with Winter
-  dialog: {fileID: 11400000, guid: 5f899b772f4c93a4183708307530d29f, type: 2}
+  message: Talk with Grave Keeper
+  dialog: {fileID: 11400000, guid: c7dbdefce87f65545aa9631f4c8a4088, type: 2}
+--- !u!114 &900468995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3715018316721425298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f878f99162441bb4e8810bb95af2cba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: {fileID: 3715018316721425299}
+  TakeASeat: {fileID: 11400000, guid: 6e280d5f3d7d19e4bb69d4755ae53051, type: 2}
 --- !u!1001 &7601068565140264908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -163,8 +178,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56f991a1f29a98b48aa3907f51022ecb, type: 3}
+--- !u!1 &7331018275056249501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 56f991a1f29a98b48aa3907f51022ecb, type: 3}
+  m_PrefabInstance: {fileID: 7601068565140264908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7995810095272276007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56f991a1f29a98b48aa3907f51022ecb, type: 3}
   m_PrefabInstance: {fileID: 7601068565140264908}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &1277215787
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331018275056249501}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.03
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.67, z: 0}

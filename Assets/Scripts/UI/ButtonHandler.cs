@@ -9,7 +9,7 @@ public class ButtonHandler : MonoBehaviour
 {
 
     [SerializeField] Button startAsSelected = null; //This button starts selected. Plays nice with controller.
-    [SerializeField] SceneHandler sceneHandler = null;
+    SceneHandler sceneHandler = null;
 
     private GameSettings settings = null;
 
@@ -17,14 +17,17 @@ public class ButtonHandler : MonoBehaviour
     {
         settings = GameSettings.Instance;
 
+        sceneHandler = SceneHandler.instance;
+
         SetSelected();
     }
 
     public void Play()
     {
+
         if(sceneHandler == null) { return; }
-        Debug.Log($"Going to dreams test level.");
-        sceneHandler.LoadLevel(SceneHandler.LEVELS.kabungusTest);
+
+        sceneHandler.LoadLevel(SceneHandler.LEVELS.BoatScene);
     }
 
     public void SetPause(bool state)

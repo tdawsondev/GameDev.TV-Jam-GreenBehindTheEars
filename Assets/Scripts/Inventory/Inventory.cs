@@ -6,10 +6,10 @@ using System;
 
 public class Inventory : MonoBehaviour
 {
-    #region Singleton
+    #region Awake
 
     public static Inventory instance;
-
+    private PlayerInputActions inputActions;
     private void Awake()
     {
         if (instance != null)
@@ -17,6 +17,17 @@ public class Inventory : MonoBehaviour
             Debug.LogWarning("More than one Inventory Object");
         }
         instance = this;
+        inputActions = new PlayerInputActions();
+    }
+    private void OnEnable()
+    {
+        inputActions.Player.Inventory.performed += OnInventory;
+        inputActions.Player.Inventory.Enable();
+    }
+    private void OnDisable()
+    {
+        inputActions.Player.Inventory.performed -= OnInventory;
+        inputActions.Player.Inventory.Disable();
     }
     #endregion
 
@@ -72,8 +83,10 @@ public class Inventory : MonoBehaviour
     /// Input Key For inventory
     /// </summary>
     /// <param name="value"></param>
-    void OnInventory(InputValue value)
+    public void OnInventory(InputAction.CallbackContext context)
     {
+       
+
         if (InventoryUI.instance.invetoryOpen)
         {
             InventoryUI.instance.CloseInventory();
@@ -82,6 +95,7 @@ public class Inventory : MonoBehaviour
         {
             InventoryUI.instance.ActivateInventory();
         }
+        
         
     }
 

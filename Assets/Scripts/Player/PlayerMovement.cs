@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     #region Singleton
 
+    const float GRAVITY = -9.8f;
+
     public static PlayerMovement instance;
 
     private void Awake()
@@ -19,19 +21,26 @@ public class PlayerMovement : MonoBehaviour
     }
     #endregion
 
-
+    [Header("Input")]
     private PlayerInputActions inputActions;
     private InputAction movement;
-
-    public Transform graphics;
-    public Animator animator;
-
-
     [SerializeField] CharacterController controller;
     public float speed = 5f;
     float valx, valz; // used in input smoothing. 
-
     public bool movementDisabled = false;
+
+    [Header("Graphics")]
+    public Transform graphics;
+    public Animator animator;
+
+    
+
+    [Header("Ground Stuff")]
+    [SerializeField] Transform groundCheck = null;
+    [SerializeField] float groundDistance = 0.2f;
+    public LayerMask groundMask;
+    [SerializeField] bool isGrounded = true;
+    Vector3 velocity;
     
 
     private void AfterAwake()
@@ -93,6 +102,25 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+    }
+
+    private void FixedUpdate()
+    {
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask, QueryTriggerInteraction.Ignore);
+
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -1f;
+            // resets velocity. kept at -2 to keep player tied to the ground
+        }
+        velocity.y += GRAVITY * Time.deltaTime * 4f; // the extra 2f is to speed up the fall.
+
+        if (!isGrounded)
+        {
+             controller.Move(velocity * Time.deltaTime);
+        }
+
+        
     }
 
     private void RotateGraphics(Vector2 input)
