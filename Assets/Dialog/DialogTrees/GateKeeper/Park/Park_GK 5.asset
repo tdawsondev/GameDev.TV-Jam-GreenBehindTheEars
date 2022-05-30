@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: Park_GK 5
   m_EditorClassIdentifier: 
+  id: 537fd813-ff98-48ee-9eed-e4593cf01e8e
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: "That you will understand in time. \r\n"
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 69a5b1f080302e94dbe67397da347f56, type: 2}
+    tasks:
+    - {fileID: 11400000, guid: 1d5ed74f556ee20409cb038d88feeff4, type: 2}
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

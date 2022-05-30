@@ -20,6 +20,18 @@ public class TownStateManager : StateManager
         {
             gk.SetDialog(gk.afterHouse);
         }
+        if (PlayerPrefs.GetInt("GKArrivePark") == 1)
+        {
+            gk.SetDialog(gk.parkEntry);
+        }
+        if (PlayerPrefs.GetInt("GKBeforeHat") == 1)
+        {
+            gk.SetDialog(gk.parkBeforeHat);
+        }
+        if (PlayerPrefs.GetInt("GKAfterHat") == 1)
+        {
+            gk.SetDialog(gk.parkRecurring);
+        }
     }
 
     // Update is called once per frame
@@ -41,6 +53,18 @@ public class TownStateManager : StateManager
 
     public void AfterArriveatPark()
     {
-        gk.SetDialog(gk.parkConvo);
+        PlayerPrefs.SetInt("GKArrivePark", 1);
+        gk.SetDialog(gk.parkEntry);
+    }
+
+    public void SetParkBeforeHat()
+    {
+        PlayerPrefs.SetInt("GKBeforeHat", 1);
+        gk.SetDialog(gk.parkBeforeHat);
+    }
+    public void SetParkAfterHat()
+    {
+        PlayerPrefs.SetInt("GKAfterHat", 1);
+        gk.SetDialog(gk.parkRecurring);
     }
 }
