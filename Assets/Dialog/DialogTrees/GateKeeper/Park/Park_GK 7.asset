@@ -10,24 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: Park_GK 6
+  m_Name: Park_GK 7
   m_EditorClassIdentifier: 
-  id: d67c0966-eb07-4f43-b28c-96a2bae655a7
+  id: dc10d01d-0288-4cd4-a961-f9869ce1c095
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 'In case you have missed it, we are in this park for a reason. There
-    is a memory to be found here. You must bring it to me before we continue. '
+  dialogText: "There is someone who arrived here not long before you that I think
+    would appreciate the amusing headwear currently in your possession. I had been
+    intending to gift it to her, but I believe it might be helpful for all involved
+    if you were to do this on my behalf. She lives down the road to the West of here.
+    \r"
   italic: 0
   bold: 0
   choices:
-  - text: Exit
+  - text: Next
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: dc5ba53bf0d91b74b8fc08efdeefba1c, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
-    requiredDialogs: []
-  - text: Do you mean this hat?
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 04d53273ba62b7549bf0ba29d75cc1e2, type: 2}
-    tasks: []
-    requiredItem: {fileID: 11400000, guid: c640fe7c219a36a4eb4bf10aa9555805, type: 2}
     requiredDialogs: []
