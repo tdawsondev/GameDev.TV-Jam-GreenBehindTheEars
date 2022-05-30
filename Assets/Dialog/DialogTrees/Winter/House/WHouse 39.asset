@@ -20,7 +20,7 @@ MonoBehaviour:
   choices:
   - text: Next
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 0f61bd62a0ee4b648a36a2e1b21f8b81, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
