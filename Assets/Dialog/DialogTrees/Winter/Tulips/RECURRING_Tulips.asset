@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: RECURRING_Tulips
+  m_Name: Recurring_Tulips
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 0}
-  dialogText: 'H-Hi... Thanks for the hat. '
+  dialogText: 'Go away. '
   italic: 0
   bold: 0
   choices: []

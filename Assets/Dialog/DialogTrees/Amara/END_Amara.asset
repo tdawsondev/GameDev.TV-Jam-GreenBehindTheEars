@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: END_Amara
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
-  Speaker: {fileID: 0}
-  dialogText: Words, words, words.
+  Speaker: {fileID: 11400000, guid: 5f26670bd14b2874e8f5d6e5fd955dea, type: 2}
+  dialogText: Hello. It is good to see you again.
   italic: 0
   bold: 0
   choices: []

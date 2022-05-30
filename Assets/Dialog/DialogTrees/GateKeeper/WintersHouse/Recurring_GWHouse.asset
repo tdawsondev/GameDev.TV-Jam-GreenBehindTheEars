@@ -10,11 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: GWHouse
+  m_Name: Recurring_GWHouse
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 
+  dialogText: "There are tasks that remain undone and you and I should likely be
+    directing our attention to them, don\u2019t you think? If Winter\u2019s house
+    doesn\u2019t hold the answers we are after, then come back to me and I will assist. "
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

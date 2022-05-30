@@ -10,17 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: Tulip_1 7
+  m_Name: Recurring_GTulip
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: "Precisely! I\u2019m sure she will appreciate the gift"
+  dialogText: 'G: Well what are you waiting for, go find her a tulip!'
   italic: 0
   bold: 0
-  choices:
-  - text: Exit
-    characterPoints: []
-    nextDialog: {fileID: 0}
-    tasks: []
-    requiredItem: {fileID: 0}
-    requiredDialogs: []
+  choices: []
