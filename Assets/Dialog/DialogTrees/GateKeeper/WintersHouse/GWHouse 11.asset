@@ -18,4 +18,10 @@ MonoBehaviour:
     rather than yours? \r\n"
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: e1667986d4e5b4a41adc71d3674a6998, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

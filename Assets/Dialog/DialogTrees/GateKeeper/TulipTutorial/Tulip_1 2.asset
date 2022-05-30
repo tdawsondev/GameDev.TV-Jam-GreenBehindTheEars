@@ -18,4 +18,10 @@ MonoBehaviour:
     not \r\nlisten to a word they say!\r\n"
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: da480123a239a1142a25d3c540c55b38, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

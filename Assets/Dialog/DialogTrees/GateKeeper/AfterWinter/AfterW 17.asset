@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: AfterW 17
+  m_EditorClassIdentifier: 
+  id: a918fd9d-ce06-4032-bb38-eedebafb5f22
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: You have done well so far with Winter. I have high hopes for what is
+    to come.
+  italic: 0
+  bold: 0
+  choices:
+  - text: How long have you been doing this?
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: And how long do I need to keep doing this?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 70ed218a34b84844c9dbb04114e74d6e, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: But she's not ready to move on yet right?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: c358a4f8f88168a4f82126011bbb8df6, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

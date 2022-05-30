@@ -17,4 +17,16 @@ MonoBehaviour:
   dialogText: "Thank you so much. Finally after so long I feel like\u2026 myself!\r\n"
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: I'm glad I could help.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: f7d7338d157ac8949b7a71e5f4c3ecdf, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Haha, I barely did anything
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: f7d7338d157ac8949b7a71e5f4c3ecdf, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

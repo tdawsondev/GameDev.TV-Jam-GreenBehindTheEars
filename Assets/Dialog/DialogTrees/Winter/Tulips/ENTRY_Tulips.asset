@@ -13,8 +13,26 @@ MonoBehaviour:
   m_Name: ENTRY_Tulips
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
-  Speaker: {fileID: 0}
-  dialogText: 'H-Hi... Thanks for the hat. '
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  dialogText: H-Hi...
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Hello again
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: cddefbd09564d524099f0c81cb684528, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: How are you doing?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: cddefbd09564d524099f0c81cb684528, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: I have this tulip for you.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 4ea492eb502474a4d9d6be3a28a26634, type: 2}
+    tasks: []
+    requiredItem: {fileID: 11400000, guid: 9102658d3740cbd4a951cf2bdc49a3be, type: 2}
+    requiredDialogs: []

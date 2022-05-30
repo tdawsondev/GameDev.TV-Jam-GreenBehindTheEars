@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: AfterW 4
+  m_EditorClassIdentifier: 
+  id: a918fd9d-ce06-4032-bb38-eedebafb5f22
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: You might recall that I mentioned the souls that come here are those
+    that are not yet ready to move on. They are - for lack of a better word - stuck
+    in a sense.
+  italic: 0
+  bold: 0
+  choices:
+  - text: Yeah, I understand that.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: ce9d513c11be77a48a8f4a942ed6e8af, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Like Winter is?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: c582ee2e2aca1f144b780262966ca44c, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Am I not ready to move on?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 1b32c36273e59f44d950a14ee024806a, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

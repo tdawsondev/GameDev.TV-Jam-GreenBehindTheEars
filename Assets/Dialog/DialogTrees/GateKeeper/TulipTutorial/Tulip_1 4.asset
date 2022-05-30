@@ -14,12 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: ' You see, when you give people items that relate to their past lives,
-    it can help them to remember other parts of their past. You should pay close
-    attention to what they tell you about a gift. It may help you understand them
-    better.
+  dialogText: 'Interestingly, when you give people items that relate to their past
+    lives, it can help them to remember other parts of their past. You should pay
+    close attention to what they tell you about a gift. It may help you understand
+    them better.
 
 '
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 35cbba9895ef5674c8f8ff7a32c2c427, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

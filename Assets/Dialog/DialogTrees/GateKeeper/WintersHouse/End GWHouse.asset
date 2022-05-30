@@ -18,4 +18,10 @@ MonoBehaviour:
     to do from here. If ever you feel lost, just come find me outside my house. '
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

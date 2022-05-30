@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: Meeting 4
+  m_EditorClassIdentifier: 
+  id: d3f885eb-d5ea-4a2a-a8f0-8d062003eab5
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  dialogText: "It's a funny coincidence, but I really like silly hats like that\u2026"
+  italic: 0
+  bold: 0
+  choices:
+  - text: Why is that?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: ef05472c1b32eb94fa08f6a652450ed7, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: I like them too.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 411ab1876a6b0bd4392dbde8347dfbb3, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

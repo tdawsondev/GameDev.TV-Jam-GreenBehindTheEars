@@ -20,15 +20,15 @@ MonoBehaviour:
   italic: 0
   bold: 0
   choices:
-  - text: So what are you saying?
+  - text: 'That''s very confusing. '
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: d570d768f812105478d2b1ea6f18193b, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: So I should give her a tulip?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 9c8ae18858cf1104b83829ffaed9f81a, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

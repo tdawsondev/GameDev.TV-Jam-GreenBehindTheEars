@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: AfterW 37
+  m_EditorClassIdentifier: 
+  id: a918fd9d-ce06-4032-bb38-eedebafb5f22
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: 'Who are you talking to? It appears that you were not with us for a
+    while, I wonder if your mind is reacting poorly to your attempts to fight the
+    curse. Perhaps you should go and help Winter. '
+  italic: 0
+  bold: 0
+  choices:
+  - text: Yes, Winter. Help, Winter.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: I just want it to end.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Winter dies tonight.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: a2cb455bf356d46459db712ad5b5a16d, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Wait I've been here before.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: bcca9cda0c35e4b4c8dc7e9d4b8b855c, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

@@ -19,4 +19,16 @@ MonoBehaviour:
     to you.\r\n"
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Yeah, now that you mention it.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 0214ac1efad46cd4eacc75cc4a3df4b2, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: If you say so.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 0214ac1efad46cd4eacc75cc4a3df4b2, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

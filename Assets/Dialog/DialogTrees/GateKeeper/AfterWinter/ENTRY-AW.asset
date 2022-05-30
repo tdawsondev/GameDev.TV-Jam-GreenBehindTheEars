@@ -14,7 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: Words, words, words.
+  dialogText: It is good to see you again. How did you fare with Winter?
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Yeah, it went okay I guess.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 5e6a407ce4b16cb4ca9c0c5081de99e4, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: 'She is quite the character. '
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 2a5f78e10d563e54fb74ceca31daf090, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: She's been through a lot. I felt so sorry for her.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 2a5f78e10d563e54fb74ceca31daf090, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

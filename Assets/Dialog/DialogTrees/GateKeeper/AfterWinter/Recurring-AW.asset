@@ -14,7 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: Words, words, words.
+  dialogText: 'When she is ready to leave, show Winter to the port to the North.
+    I will await you there when the time comes. '
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
