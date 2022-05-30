@@ -20,12 +20,6 @@ MonoBehaviour:
   italic: 0
   bold: 0
   choices:
-  - text: I was just kidding, I'd love to help Winter.
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
-    tasks: []
-    requiredItem: {fileID: 0}
-    requiredDialogs: []
   - text: 'I''ll go help Winter I guess. '
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}

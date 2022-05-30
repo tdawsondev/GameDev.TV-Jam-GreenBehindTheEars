@@ -18,7 +18,13 @@ MonoBehaviour:
   italic: 0
   bold: 0
   choices:
-  - text: Next
+  - text: 1
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: b257ddfbbddf0f44a9a5286550443eb0, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: 2
     characterPoints: []
     nextDialog: {fileID: 0}
     tasks: []

@@ -14,13 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: Words, words, words.
+  dialogText: What else is there to ask about?
   italic: 0
   bold: 0
   choices:
-  - text: Next
+  - text: This obituary?
     characterPoints: []
     nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
+  - text: The letter?
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: The dusty violin?
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs:
+    - {fileID: 11400000, guid: 39ff96e58c5fc1b48a57335605c1a5fd, type: 2}

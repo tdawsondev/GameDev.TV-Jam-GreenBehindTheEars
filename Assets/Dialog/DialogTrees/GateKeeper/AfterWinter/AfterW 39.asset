@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: a918fd9d-ce06-4032-bb38-eedebafb5f22
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: I am afraid I have my lines... Perhaps it is my mind that is playing
-    tricks after all. I'm not really sure where we go from here?
+  dialogText: I am afraid I have my lines... Is it my mind that is playing tricks
+    after all. I do not know where we go from here.
   italic: 0
   bold: 0
   choices:
-  - text: Haven't you been paying attention? To help Winter.
+  - text: Haven't you been paying attention? We have to go help Winter.
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
     tasks: []

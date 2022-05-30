@@ -19,13 +19,13 @@ MonoBehaviour:
   italic: 0
   bold: 0
   choices:
-  - text: Winter?
+  - text: Helping Winter?
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: e27528b827ed08c479b43bb8e080345c, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: Winter.
+  - text: Helping Winter.
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: e27528b827ed08c479b43bb8e080345c, type: 2}
     tasks: []
