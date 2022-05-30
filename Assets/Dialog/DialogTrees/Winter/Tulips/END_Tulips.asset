@@ -17,4 +17,11 @@ MonoBehaviour:
   dialogText: Winter runs into her house and slams the door shut behind her.
   italic: 1
   bold: 0
-  choices: []
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks:
+    - {fileID: 11400000, guid: 404003a8bc7f8494fa9314df29e430ee, type: 2}
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

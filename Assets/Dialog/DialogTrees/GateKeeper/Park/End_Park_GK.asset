@@ -24,6 +24,5 @@ MonoBehaviour:
     nextDialog: {fileID: 0}
     tasks:
     - {fileID: 11400000, guid: 2ec769512aba4a2488a5438e16e95fae, type: 2}
-
     requiredItem: {fileID: 0}
     requiredDialogs: []

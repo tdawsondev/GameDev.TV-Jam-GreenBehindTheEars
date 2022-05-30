@@ -34,5 +34,5 @@ MonoBehaviour:
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 4ea492eb502474a4d9d6be3a28a26634, type: 2}
     tasks: []
-    requiredItem: {fileID: 11400000, guid: 9102658d3740cbd4a951cf2bdc49a3be, type: 2}
+    requiredItem: {fileID: 11400000, guid: c413b2e2392f29d41ae99e93c2f1b39a, type: 2}
     requiredDialogs: []
