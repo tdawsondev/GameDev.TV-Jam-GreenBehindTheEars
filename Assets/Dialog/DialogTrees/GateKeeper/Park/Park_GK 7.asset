@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: Park_GK 7
+  m_EditorClassIdentifier: 
+  id: dc10d01d-0288-4cd4-a961-f9869ce1c095
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: "There is someone who arrived here not long before you that I think
+    would appreciate the amusing headwear currently in your possession. I had been
+    intending to gift it to her, but I believe it might be helpful for all involved
+    if you were to do this on my behalf. She lives down the road to the West of here.
+    \r"
+  italic: 0
+  bold: 0
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: dc5ba53bf0d91b74b8fc08efdeefba1c, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
