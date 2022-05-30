@@ -16,6 +16,9 @@ public class Gatekeeper_Character : Character
     public DialogObject entryGW;
     public DialogObject arriveWinterHouse;
     public DialogObject winterHouseRecurring;
+    public DialogObject guidReccuring;
+    public DialogObject entryAW;
+    public DialogObject AWRecurring;
 
 
 

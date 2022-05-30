@@ -9,4 +9,6 @@ public class Winter_Character : Character
     public DialogObject entryTulips;
     public DialogObject tulipsRecurring;
 
+    public DialogObject violinRecurring;
+
 }

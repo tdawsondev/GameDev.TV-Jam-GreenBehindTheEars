@@ -58,8 +58,14 @@ public class TownStateManager : StateManager
         }
         if (PlayerPrefs.GetInt("AfterHouseConvo") == 1)
         {
-            gk.transform.position = gk.houseLocation.position;
+            //gk.transform.position = gk.houseLocation.position;
             AfterHouseConvo();
+        }
+        // -------
+
+        if (PlayerPrefs.GetInt("AfterInsideHouse1") == 1)
+        {
+            SetAfterInsideHouse();
         }
 
     }
@@ -146,5 +152,20 @@ public class TownStateManager : StateManager
         gk.SetDialog(gk.winterHouseRecurring);
         winterDoorDialog.SetDisable();
         winterDoorScene.SetEnable();
+        SetAfterInsideHouse(); // WILL BE MOVED AFTER INSIDE SCENE
+    }
+
+    public void SetAfterInsideHouse() // after end house
+    {
+        PlayerPrefs.SetInt("AfterInsideHouse1", 1);
+        winter.SetDialog(winter.violinRecurring);
+        winterDoorDialog.SetEnable();
+        winterDoorDialog.dialog = winter.violinRecurring;
+        winterDoorScene.SetDisable();
+        gk.SetDialog(gk.entryAW);
+    }
+    public void SetGkAWRecurring()
+    {
+        gk.SetDialog(gk.AWRecurring);
     }
 }
