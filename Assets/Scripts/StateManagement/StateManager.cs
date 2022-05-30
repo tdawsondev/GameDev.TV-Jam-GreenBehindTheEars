@@ -65,6 +65,17 @@ public class StateManager : MonoBehaviour
         }
     }
 
+    [ContextMenu("Clear Player Prefs")]
+    public void ClearPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+    [ContextMenu("Delete Temps")]
+    public void DeleteTemps()
+    {
+        SaveSystem.DeleteAllTemps();
+    }
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
