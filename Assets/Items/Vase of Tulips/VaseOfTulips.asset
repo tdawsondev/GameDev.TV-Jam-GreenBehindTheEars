@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Vase of Tulips
   description: "A vase full of vibrant tulips! The colours are so bright it almost
     seems as if they are glowing! They\u2019ve clearly been well cared for."
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 4b92a2f789b0f834b8bb79203cbb8485, type: 3}
   ID: 000107
-  prefab: {fileID: 0}
+  prefab: {fileID: 2503092202902653451, guid: 158e8ac28ad47e74282736e221c91204, type: 3}

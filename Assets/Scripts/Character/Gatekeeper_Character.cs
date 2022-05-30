@@ -19,6 +19,7 @@ public class Gatekeeper_Character : Character
     public DialogObject guidReccuring;
     public DialogObject entryAW;
     public DialogObject AWRecurring;
+    public DialogObject entryFinal;
 
 
 
@@ -26,6 +27,7 @@ public class Gatekeeper_Character : Character
     public Transform parkLocation;
     public Transform houseLocation;
     public Transform wintersHouse;
+    public Transform GateKeeperBoat;
 
 
 

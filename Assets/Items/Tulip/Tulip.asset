@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Tulip
   description: A simple flower. Its colours seem even more vibrant than the flowers
     you remember in life.
-  icon: {fileID: 21300000, guid: 4b92a2f789b0f834b8bb79203cbb8485, type: 3}
+  icon: {fileID: 21300000, guid: a47211f17e1592a409ebd34b165ce955, type: 3}
   ID: 000093
   prefab: {fileID: 7814403964520363323, guid: 6a03d995b6965604aa7ec01afd129e00, type: 3}

@@ -16,6 +16,6 @@ MonoBehaviour:
   description: "An obituary torn from a newspaper dated October 4, 1983, that describes
     the tragic death of a young man, and mentions the widow he left behind. The page
     is worn and wrinkled, as if it\u2019s been wet and dried many times."
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: bd188d39ccfad404e8ce2c834b7e163e, type: 3}
   ID: 000101
-  prefab: {fileID: 0}
+  prefab: {fileID: 2187799204136833779, guid: d0f4e859916fcaa4cbc85c1cf23bb1f7, type: 3}

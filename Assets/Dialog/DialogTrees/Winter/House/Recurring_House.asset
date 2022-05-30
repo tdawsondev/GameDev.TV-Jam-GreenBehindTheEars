@@ -17,4 +17,10 @@ MonoBehaviour:
   dialogText: The playing of a violin can be heard from inside.
   italic: 1
   bold: 0
-  choices: []
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

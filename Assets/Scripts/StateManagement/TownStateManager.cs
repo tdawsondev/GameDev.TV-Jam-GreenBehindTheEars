@@ -10,6 +10,8 @@ public class TownStateManager : StateManager
     public SceneInteraction winterDoorScene;
     public DialogueInteractable winterDoorDialog;
 
+    public GameObject youDidItYay;
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -66,6 +68,18 @@ public class TownStateManager : StateManager
         if (PlayerPrefs.GetInt("AfterInsideHouse1") == 1)
         {
             SetAfterInsideHouse();
+        }
+        if (PlayerPrefs.GetInt("RecurringAW") == 1)
+        {
+            SetGkAWRecurring();
+        }
+        if (PlayerPrefs.GetInt("AfterENC") == 1)
+        {
+            AfterENC();
+        }
+        if (PlayerPrefs.GetInt("BothArrive") == 1)
+        {
+            AfterBothArive();
         }
 
     }
@@ -166,6 +180,51 @@ public class TownStateManager : StateManager
     }
     public void SetGkAWRecurring()
     {
+        PlayerPrefs.SetInt("RecurringAW", 1);
         gk.SetDialog(gk.AWRecurring);
+        winterGameObject.SetActive(true);
+        winterDoorDialog.SetDisable();
+        winterDoorScene.SetEnable();
+        winter.SetDialog(winter.entryENC);
+    }
+    public void AfterENC()
+    {
+        PlayerPrefs.SetInt("AfterENC", 1);
+        winter.SetDestination(winter.boatLocation, WinterArrives);
+        gk.SetDestination(gk.GateKeeperBoat, GKArrives);
+        
+    }
+
+    bool winterArrive = false;
+    bool gkArrive = false;
+    public void WinterArrives()
+    {
+        winterArrive = true;
+        if (!gkArrive)
+        {
+            return;
+        }
+        AfterBothArive();
+    }
+    public void GKArrives()
+    {
+        gkArrive = true;
+        if (!winterArrive)
+        {
+            return;
+        }
+        AfterBothArive();
+    }
+    public void AfterBothArive()
+    {
+        PlayerPrefs.SetInt("BothArrive", 1);
+        Debug.Log("FINAL SCENE");
+        winter.SetDialog(gk.entryFinal);
+        gk.SetDialog(gk.entryFinal);
+    }
+
+    public void AfterEnd()
+    {
+        youDidItYay.SetActive(true);
     }
 }
