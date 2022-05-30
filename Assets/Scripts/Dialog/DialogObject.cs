@@ -49,7 +49,10 @@ public class DialogObject : ScriptableObject
 
     public void GenerateID()
     {
-        id = new Guid().ToString();
+        if (id == "" || id == "00000000-0000-0000-0000-000000000000")
+        {
+            id = Guid.NewGuid().ToString();
+        }
     }
 }
 

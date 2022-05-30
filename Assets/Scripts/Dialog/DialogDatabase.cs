@@ -24,6 +24,10 @@ public class DialogDatabase : ScriptableObject
     public void RefreshList()
     {
         dialogObjects = new List<DialogObject>(GetAllInstances<DialogObject>());
+        foreach(DialogObject obj in dialogObjects)
+        {
+            obj.GenerateID();
+        }
     }
 
     public static T[] GetAllInstances<T>() where T: ScriptableObject
