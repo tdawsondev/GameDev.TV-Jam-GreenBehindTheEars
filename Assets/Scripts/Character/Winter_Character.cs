@@ -7,5 +7,6 @@ public class Winter_Character : Character
     [Header("DialogObjects")]
     public DialogObject Entry;
     public DialogObject entryTulips;
+    public DialogObject tulipsRecurring;
 
 }

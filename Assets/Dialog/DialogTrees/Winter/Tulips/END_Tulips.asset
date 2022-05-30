@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: END_Tulips
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
+  id: 8fe4e010-630d-4c28-953e-1d774a4ec3ee
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
   dialogText: Winter runs into her house and slams the door shut behind her.
   italic: 1
   bold: 0
-  choices: []
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks:
+    - {fileID: 11400000, guid: 04107f3f1b6e1944bb5fc8f19cd4543f, type: 2}
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

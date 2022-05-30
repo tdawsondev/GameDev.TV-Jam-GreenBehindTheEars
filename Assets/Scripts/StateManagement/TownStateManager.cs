@@ -7,6 +7,8 @@ public class TownStateManager : StateManager
     [SerializeField] Gatekeeper_Character gk = null;
     [SerializeField] Winter_Character winter = null;
     public GameObject winterGameObject;
+    public SceneInteraction winterDoorScene;
+    public DialogueInteractable winterDoorDialog;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -44,6 +46,10 @@ public class TownStateManager : StateManager
         if (PlayerPrefs.GetInt("GKTulipEntry") == 1)
         {
             SetAfterGKTulipEntry();
+        }
+        if (PlayerPrefs.GetInt("WinterTulipHouse") == 1)
+        {
+            WinterAfterTulips();
         }
 
     }
@@ -100,5 +106,15 @@ public class TownStateManager : StateManager
     {
         PlayerPrefs.SetInt("GKTulipEntry", 1);
         gk.SetDialog(gk.tulipRecurring);
+    }
+
+    public void WinterAfterTulips()
+    {
+        PlayerPrefs.SetInt("WinterTulipHouse", 1);
+        winter.SetDialog(winter.tulipsRecurring);
+        winterGameObject.SetActive(false);
+        winterDoorScene.SetDisable();
+        winterDoorDialog.SetEnable();
+        gk.SetDialog(gk.entryGW);
     }
 }

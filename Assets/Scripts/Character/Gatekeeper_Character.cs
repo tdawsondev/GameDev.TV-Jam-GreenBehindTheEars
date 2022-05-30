@@ -13,6 +13,7 @@ public class Gatekeeper_Character : Character
     public DialogObject parkRecurring;
     public DialogObject tulipEntry;
     public DialogObject tulipRecurring;
+    public DialogObject entryGW;
 
 
 
