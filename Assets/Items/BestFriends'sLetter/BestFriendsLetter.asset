@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0ae290f7a41fb4ebaf7d23ef129c28, type: 3}
+  m_Name: BestFriendsLetter
+  m_EditorClassIdentifier: 
+  itemName: Best Friend's Letter
+  description: "\u201CDear Winter, I am moving away. Aaron got a job opportunity,
+    and we\u2019re leaving together. I\u2019m sorry, but please don\u2019t try to
+    find us. I care about you deeply, and you were a wonderful friend, but the last
+    few years have been really difficult for me. I\u2019m sorry, but I can\u2019t
+    live your life for you and live mine at the same time. So, this is goodbye. I
+    wish you all the best, I hope you can forgive me. - Mary\u201D"
+  icon: {fileID: 0}
+  ID: 000097
+  prefab: {fileID: 0}
