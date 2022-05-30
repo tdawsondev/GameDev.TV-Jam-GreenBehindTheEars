@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: Recurring_House
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
-  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  id: b448a471-e1cd-4422-80dd-4061f5d2f6ae
+  Speaker: {fileID: 11400000, guid: b93d08ed0db4b2545a14d1929d9e8da8, type: 2}
   dialogText: The playing of a violin can be heard from inside.
   italic: 1
   bold: 0

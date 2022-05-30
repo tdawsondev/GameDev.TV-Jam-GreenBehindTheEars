@@ -20,20 +20,19 @@ MonoBehaviour:
   choices:
   - text: This obituary?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 45655e3c620367b44b7e5f4f3b55269f, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: The letter?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: c163f9dd0c9c25d4c81726262e246d23, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: The dusty violin?
+  - text: This violin?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 1b94c05f6ff435c4493f3f85fd77e1bd, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
-    requiredDialogs:
-    - {fileID: 11400000, guid: 39ff96e58c5fc1b48a57335605c1a5fd, type: 2}
+    requiredDialogs: []

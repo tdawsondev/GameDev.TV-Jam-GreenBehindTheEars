@@ -20,13 +20,13 @@ MonoBehaviour:
   choices:
   - text: This ring?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: b840e5e5c60d8834da15fa6192e38556, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: The photo of the old woman?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: a9b61b1f3f6405e45af996717a5fca15, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

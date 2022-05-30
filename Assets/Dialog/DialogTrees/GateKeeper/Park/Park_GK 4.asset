@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: Park_GK 4
   m_EditorClassIdentifier: 
   id: 82ff0f30-fe73-495e-b512-591e0250bdcd
-
-  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 'Exactly. The moment of your arrival was a notable memory for me, as
+  Speaker: {fileID: 0}
+  dialogText: "Exactly. The moment of your arrival was a notable memory for me, as
     you too share the curse I bear. Though I had a hunch that the impact it had would
     be far greater in your hands than mine, and I chose for you to be in possession
-    of it. It is your memory now, to do with as you wish. '
+    of it. It is your memory now, to do with as you wish. \r\n"
   italic: 0
   bold: 0
   choices:
   - text: Next
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 69a5b1f080302e94dbe67397da347f56, type: 2}
-    tasks:
-    - {fileID: 11400000, guid: 1d5ed74f556ee20409cb038d88feeff4, type: 2}
+    tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
