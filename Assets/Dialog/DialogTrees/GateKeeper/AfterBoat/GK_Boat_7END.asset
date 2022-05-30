@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: GK_Boat_7END
   m_EditorClassIdentifier: 
+  id: fc575507-744e-4e67-a7c3-13ab763d1906
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: Your house anchors you to this place, and will be at the centre of
-    your interaction with it. Go to it now, and I will meet you outside when you
-    have done so. There will be answers for your questions then.
+  dialogText: Your house anchors you to this place. Take a seat for now, and I will
+    meet you outside your house when we arrive. There will be answers for your questions
+    then.
+  italic: 0
+  bold: 0
   choices:
   - text: Exit
     characterPoints: []
@@ -24,3 +27,4 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 0afe95f27ee277143af5377c4b19262e, type: 2}
     - {fileID: 11400000, guid: 14cd9f4667f7f6c41b238d02f825e613, type: 2}
     requiredItem: {fileID: 0}
+    requiredDialogs: []

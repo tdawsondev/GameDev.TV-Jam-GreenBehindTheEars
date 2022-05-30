@@ -12,24 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: GK_House_1 2
   m_EditorClassIdentifier: 
+  id: ee2f59d3-de75-440a-a31d-99fbdfc851ce
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: ' If someone trusts you enough to let you into their house, they are
     not merely letting you into their abode, they are sharing with you their innermost
     selves - their regrets, their desires, everything that defines who they are as
     people. '
+  italic: 0
+  bold: 0
   choices:
   - text: "But my house doesn\u2019t seem anything like me."
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: f9e54f68da193d94a806b287a0bb4b74, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
+    requiredDialogs: []
   - text: Can I come to your house?
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: f9e54f68da193d94a806b287a0bb4b74, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
-  - text: "ou still haven\u2019t told me who you are, or how you know this."
+    requiredDialogs: []
+  - text: "You still haven\u2019t told me who you are, or how you know this."
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 04bab075dba79ad419716ef74c28b10f, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
+    requiredDialogs: []
