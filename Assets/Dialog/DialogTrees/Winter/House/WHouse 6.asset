@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: ENTRY_House
+  m_Name: WHouse 6
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
+  id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: Did you want to ask me about something in the house?
+  dialogText: Words, words, words.
   italic: 0
   bold: 0
   choices:
-  - text: 'Not at the moment sorry. '
+  - text: Next
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 5f87e1fbad3b0164a8ae7e4826081def, type: 2}
+    nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
