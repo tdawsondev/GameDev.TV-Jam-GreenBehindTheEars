@@ -79,21 +79,16 @@ public class Player : MonoBehaviour
 
     public void OnTEST(InputAction.CallbackContext context)
     {
-        Debug.Log($"Test function initiated!!! Should save the player position.");
         SaveMyPosition();
-        //SceneHandler.instance.LoadLevel(SceneHandler.LEVELS.BoatScene);
     }
 
     public void SaveMyPosition()
     {
-        Debug.Log($"saving my position");
         playerSave.OnSave();
     }
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        Debug.Log($"Trying to pause.");
-
         if (settings == null) { return; }
         settings.SetPauseState(true);
 

@@ -19,4 +19,10 @@ MonoBehaviour:
 '
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 84cb39a68c003444694d19c4c27f1fde, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

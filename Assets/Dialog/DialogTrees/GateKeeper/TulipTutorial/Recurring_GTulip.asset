@@ -17,4 +17,10 @@ MonoBehaviour:
   dialogText: 'G: Well what are you waiting for, go find her a tulip!'
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Exit
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

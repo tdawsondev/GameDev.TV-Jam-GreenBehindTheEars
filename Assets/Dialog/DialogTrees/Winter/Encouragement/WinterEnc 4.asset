@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: WinterEnc 4
+  m_EditorClassIdentifier: 
+  id: cf7ad1b6-1a3c-43d0-8086-7f6bdd5cf2ba
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  dialogText: Please, let me stay here! Maybe we can get to know each other?
+  italic: 0
+  bold: 0
+  choices:
+  - text: You can't.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: e51a6637234396d49906c36b00411432, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: I would love to know you more, Winter. But I don't want to keep you here
+      when you're ready.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 07a5d2fe0573ef34280c706bb843b42d, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

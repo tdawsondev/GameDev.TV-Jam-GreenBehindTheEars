@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: GWHouse 7
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
-  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  Speaker: {fileID: 11400000, guid: b93d08ed0db4b2545a14d1929d9e8da8, type: 2}
   dialogText: "If I don\u2019t let you in, then I won\u2019t have to see you leave.\r\n"
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 9c40c26e6e44a1946b34c44705161e73, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

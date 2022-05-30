@@ -17,4 +17,10 @@ MonoBehaviour:
   dialogText: And what do you plan to do with the place all to yourself?
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: aa7c00103aa462346b402e6473c92ae9, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

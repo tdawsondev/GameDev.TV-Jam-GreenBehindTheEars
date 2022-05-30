@@ -12,25 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: GK_Boat_3
   m_EditorClassIdentifier: 
+  id: 83543a03-3a7f-4fd9-88af-ebec8b621a2a
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: "Well that hardly matters now, does it? I\u2019m sure you lived a good
-    life that you can look back on with pride, yes?"
+  dialogText: Well that hardly matters now, does it? I am sure you lived a good life
+    that you can look back on with pride, yes?
+  italic: 0
+  bold: 0
   choices:
   - text: I think so
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 30f823a4d082d1b4aa13c0b72799ac77, type: 2}
     tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
   - text: "I don\u2019t really remember"
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 30f823a4d082d1b4aa13c0b72799ac77, type: 2}
     tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
   - text: "No, I can\u2019t be dead yet, there was still so much I needed to do!"
     characterPoints:
     - character: 0
       amount: -1
     nextDialog: {fileID: 11400000, guid: 798f1fa16958b404dbad3399c201ac2f, type: 2}
     tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
   - text: Wait, does that mean that you are dead too?
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 30f823a4d082d1b4aa13c0b72799ac77, type: 2}
     tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

@@ -63,7 +63,7 @@ public class HUDController : MonoBehaviour
     /// <param name="i"></param>
     public void ShowInteractionMessage(Interactable i)
     {
-        interactionText.text = "(E) " + i.message;
+        interactionText.text = "(E) (RB Gamepad) " + i.message;
         interactionText.gameObject.SetActive(true);
     }
     /// <summary>

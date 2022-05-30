@@ -20,4 +20,16 @@ MonoBehaviour:
     she needs. \r\n"
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: 'I think I understand. '
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 1d6e02a811208e14895d7fe887b97674, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Are you coming in as well?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 1d6e02a811208e14895d7fe887b97674, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

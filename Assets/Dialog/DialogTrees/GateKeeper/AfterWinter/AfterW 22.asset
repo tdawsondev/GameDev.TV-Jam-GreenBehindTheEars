@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: AfterW 22
+  m_EditorClassIdentifier: 
+  id: a918fd9d-ce06-4032-bb38-eedebafb5f22
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: 'It can be difficult to keep track of time here, as time flows with
+    the individual rather than at its own pace. Some take far longer after their
+    passing to make it even here. Every journey takes its own path, with some being
+    much more complicated than others. '
+  italic: 0
+  bold: 0
+  choices:
+  - text: Do you have a guess at least?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: cc72330a262a1fc45ab58776bb9976ee, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: How long will you keep doing this?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 70ed218a34b84844c9dbb04114e74d6e, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Am I stuck here forever then too?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 70ed218a34b84844c9dbb04114e74d6e, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: You make no sense old man.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: cc72330a262a1fc45ab58776bb9976ee, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

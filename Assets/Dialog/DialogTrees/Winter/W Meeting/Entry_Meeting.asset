@@ -17,4 +17,10 @@ MonoBehaviour:
   dialogText: Oh! Hi...
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 93411aeb8a384e44f8e7fe313d23ce7f, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

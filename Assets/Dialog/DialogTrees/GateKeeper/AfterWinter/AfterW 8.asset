@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: AfterW 8
+  m_EditorClassIdentifier: 
+  id: a918fd9d-ce06-4032-bb38-eedebafb5f22
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: 'They require compassion, gentle nudges, and perhaps even a spot of
+    tough love on occasion. Above all, they have a need to be understood, before
+    they can accept themselves as they are. '
+  italic: 0
+  bold: 0
+  choices:
+  - text: Oh I think I see where this is going
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 293e4966065962740ba6ee1ba29e23f5, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Is that what I was doing for Winter?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 293e4966065962740ba6ee1ba29e23f5, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: How does that relate to the curse?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 539ce75751a90f64180ead6382e86b72, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

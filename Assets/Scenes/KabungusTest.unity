@@ -811,7 +811,7 @@ PrefabInstance:
     - target: {fileID: 3715018316721425299, guid: 352f9e72b8819c74c8be4131344b8511, type: 3}
       propertyPath: dialog
       value: 
-      objectReference: {fileID: 11400000, guid: c7dbdefce87f65545aa9631f4c8a4088, type: 2}
+      objectReference: {fileID: 11400000, guid: 1ebb4eafcb19fd345a0ef8557ad22e39, type: 2}
     - target: {fileID: 3715018316721425299, guid: 352f9e72b8819c74c8be4131344b8511, type: 3}
       propertyPath: message
       value: Talk with Grave Keeper
@@ -1582,6 +1582,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Winter
       objectReference: {fileID: 0}
+    - target: {fileID: 3715018316721425299, guid: 352f9e72b8819c74c8be4131344b8511, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: b257ddfbbddf0f44a9a5286550443eb0, type: 2}
     - target: {fileID: 3715018316721425308, guid: 352f9e72b8819c74c8be4131344b8511, type: 3}
       propertyPath: m_RootOrder
       value: 8

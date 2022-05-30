@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: Guide 2
+  m_EditorClassIdentifier: 
+  id: 22b65d18-0dd0-4d1c-a91d-512df7ff66ad
+  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  dialogText: 'After all, the right answer is meaningless without the right question,
+    and the right question cannot be answered if asked at the wrong time. '
+  italic: 0
+  bold: 0
+  choices:
+  - text: "Thank you, I think that\u2019s clear."
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 247ed0f0fa54eab4ab81c79a8823052f, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: But how do I know when the right time is to ask a question?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: b82068ae570da0b45bc4bf1af1d10f6e, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: WHouse 13
+  m_EditorClassIdentifier: 
+  id: acd6277c-ba3b-47f8-956c-c7730740e4ea
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  dialogText: Words, words, words.
+  italic: 0
+  bold: 0
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 0}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

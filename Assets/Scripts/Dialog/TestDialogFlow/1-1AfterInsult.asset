@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: 1-1AfterInsult
   m_EditorClassIdentifier: 
+  id: 9654d55e-7bb0-4e40-b674-1b5b94857e44
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
   dialogText: Well that was pretty rude!
+  italic: 0
+  bold: 0
   choices:
   - text: Exit
     characterPoints: []
     nextDialog: {fileID: 0}
-    tasks:
-    - {fileID: 11400000, guid: 14cd9f4667f7f6c41b238d02f825e613, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

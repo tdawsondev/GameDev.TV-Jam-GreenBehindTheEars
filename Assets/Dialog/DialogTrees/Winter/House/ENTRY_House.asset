@@ -17,4 +17,28 @@ MonoBehaviour:
   dialogText: Did you want to ask me about something in the house?
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: 'Not at the moment sorry. '
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 7c2be3c1cdd1f0b499f304965211473b, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Yes, this photo of a couple.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 39ff96e58c5fc1b48a57335605c1a5fd, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Yes, the vase of tulips.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: a99264188e3d1a248853fb92ca017c49, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: Something else.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: b34dcdce28a3d13479549e75491dc7dc, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

@@ -21,13 +21,13 @@ MonoBehaviour:
   choices:
   - text: "It\u2019s okay, take your time."
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 59031dae37549d54fb3b34851b44d7ff, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: Is there something I can do to make it easier?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 59031dae37549d54fb3b34851b44d7ff, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

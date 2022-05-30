@@ -20,13 +20,15 @@ MonoBehaviour:
   choices:
   - text: She mentioned she missed her tulips.
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 0214ac1efad46cd4eacc75cc4a3df4b2, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: "I wasn\u2019t really listening"
-    characterPoints: []
-    nextDialog: {fileID: 0}
+    characterPoints:
+    - character: 0
+      amount: -1
+    nextDialog: {fileID: 11400000, guid: 0ff975c2d299dc24d9ec34922a18f107, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

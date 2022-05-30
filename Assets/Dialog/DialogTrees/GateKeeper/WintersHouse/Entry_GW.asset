@@ -20,21 +20,21 @@ MonoBehaviour:
   choices:
   - text: She was really rude and told me to go away.
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 821252d9b817fc6489663a13252589d8, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: "I\u2019m not really sure, she got really upset about something and ran
       inside her house."
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 821252d9b817fc6489663a13252589d8, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: It started off well, but something really bothered her. She told me to
       leave and locked herself in her house.
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 821252d9b817fc6489663a13252589d8, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

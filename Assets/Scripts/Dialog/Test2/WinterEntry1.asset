@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: WinterEntry1
   m_EditorClassIdentifier: 
-  Speaker: Winter
+  id: 33884e0c-df51-41bf-9e46-3385e7629a1e
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
   dialogText: asdfadf
+  italic: 0
+  bold: 0
   choices:
   - text: Next
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: a26d050594f92624db890a0826a8024e, type: 2}
     tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

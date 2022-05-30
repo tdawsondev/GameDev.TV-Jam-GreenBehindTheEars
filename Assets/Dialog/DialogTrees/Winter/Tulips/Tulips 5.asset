@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
+  m_Name: Tulips 5
+  m_EditorClassIdentifier: 
+  id: e1c0ceea-39c7-470b-85e7-986b50bc0cf3
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  dialogText: "I was\u2026\r I\u2019m just not cut out for friends.\n"
+  italic: 0
+  bold: 0
+  choices:
+  - text: Why do you think that?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 61eb85795319bc74dbd8bd15c616ba4c, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: I'll be your friend.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 61eb85795319bc74dbd8bd15c616ba4c, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

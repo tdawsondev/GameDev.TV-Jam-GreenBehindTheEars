@@ -17,4 +17,10 @@ MonoBehaviour:
   dialogText: "No, you didn\u2019t do anything.\r\n"
   italic: 0
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 36d7e26c08363334cac7b8ad2ac368d4, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []

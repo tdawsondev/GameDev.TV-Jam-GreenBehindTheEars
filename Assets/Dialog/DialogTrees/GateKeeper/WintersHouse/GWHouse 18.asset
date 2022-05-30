@@ -20,19 +20,19 @@ MonoBehaviour:
   choices:
   - text: Sure
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 97cca89e15dc48946b656580d3a89acf, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: Why?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 97cca89e15dc48946b656580d3a89acf, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: Are you not coming?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 1d6e02a811208e14895d7fe887b97674, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

@@ -20,13 +20,13 @@ MonoBehaviour:
   choices:
   - text: She seemed nice, she liked the hat.
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 83ae2214694e8024b9b6e62d2fc2745c, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: "She didn\u2019t really say much, but she talked a bit about her tulips"
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 0214ac1efad46cd4eacc75cc4a3df4b2, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

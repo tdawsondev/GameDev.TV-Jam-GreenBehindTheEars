@@ -21,13 +21,13 @@ MonoBehaviour:
   choices:
   - text: "I\u2019m sorry if I upset you"
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 3c0c4edb06be53a48a1401cbe3eec1ea, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: Are you okay?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 36d7e26c08363334cac7b8ad2ac368d4, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

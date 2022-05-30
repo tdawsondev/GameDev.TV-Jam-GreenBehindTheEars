@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: GWHouse 12
   m_EditorClassIdentifier: 
   id: 00000000-0000-0000-0000-000000000000
-  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
+  Speaker: {fileID: 11400000, guid: b93d08ed0db4b2545a14d1929d9e8da8, type: 2}
   dialogText: 'There is a moment of quietness as Winter ponders that. Then the door
     opens. '
-  italic: 0
+  italic: 1
   bold: 0
-  choices: []
+  choices:
+  - text: Next
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: e77ed3aa9af18f24aad2ac51e977d18e, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
