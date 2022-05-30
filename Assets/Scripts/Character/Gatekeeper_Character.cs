@@ -8,6 +8,7 @@ public class Gatekeeper_Character : Character
     public DialogObject TakeASeat;
     public DialogObject Follow_Instructions;
     public DialogObject afterHouse;
+    public DialogObject parkConvo;
 
     [Header("Destinations")]
     public Transform parkLocation;

@@ -36,6 +36,11 @@ public class TownStateManager : StateManager
 
     public void GK_WalkToPark()
     {
-        gk.SetDestination(gk.parkLocation);
+        gk.SetDestination(gk.parkLocation, AfterArriveatPark);
+    }
+
+    public void AfterArriveatPark()
+    {
+        gk.SetDialog(gk.parkConvo);
     }
 }

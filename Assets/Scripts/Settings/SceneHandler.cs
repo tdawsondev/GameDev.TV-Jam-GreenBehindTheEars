@@ -41,6 +41,11 @@ public class SceneHandler : MonoBehaviour
 
     public void LoadLevel(LEVELS levelName)
     { 
+        if(levelName == LEVELS.BoatScene)
+        {
+            SaveSystem.DeleteAllTemps();
+            PlayerPrefs.DeleteAll();
+        }
         StartCoroutine(LoadLevel_Routine(levelName));
     }
 

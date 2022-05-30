@@ -10,6 +10,7 @@ public class Character : MonoBehaviour
     bool destinationReached = false;
     Transform target = null;
     public Animator animator;
+    Callback afterArrive;
 
     public float DistanceToTarget
     {
@@ -25,7 +26,10 @@ public class Character : MonoBehaviour
 
     protected virtual void Start()
     {
-        agent.enabled = false;
+        if (agent != null)
+        {
+            agent.enabled = false;
+        }
         destinationReached = false;
     }
 
@@ -41,9 +45,10 @@ public class Character : MonoBehaviour
             di.dialog = dObj;
         }
     }
-    public void SetDestination(Transform destination)
+    public void SetDestination(Transform destination, Callback callback = null)
     {
         Debug.Log("SetDestination");
+        afterArrive = callback;
         target = destination;
         agent.enabled = true;
         agent.SetDestination(destination.position);
@@ -51,22 +56,22 @@ public class Character : MonoBehaviour
         animator.SetBool("isWalking", true);
         interactable.SetDisable();
     }
-    public void OnArrive(Callback callback = null)
+    public void OnArrive()
     {
         Debug.Log("OnArrive");
         destinationReached = true;
         interactable.SetEnable();
         agent.enabled=false;
         animator.SetBool("isWalking", false);
-        if (callback != null)
+        if (afterArrive != null)
         {
-            callback();
+            afterArrive();
         }
     }
 
     protected virtual void Update()
     {
-        if (agent.enabled)
+        if (agent !=  null && agent.enabled)
         {
             if (DistanceToTarget <= 1f)
             {
