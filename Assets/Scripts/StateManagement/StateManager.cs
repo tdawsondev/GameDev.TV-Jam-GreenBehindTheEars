@@ -46,6 +46,8 @@ public class StateManager : MonoBehaviour
     }
     public void LoadCompletedDialogs()
     {
+        if (database == null)
+            return;
         completedDialogs = new List<DialogObject>();
         string saveData = SaveSystem.LoadTemp("dialogTempSave");
         if (saveData != null && saveData != "")
