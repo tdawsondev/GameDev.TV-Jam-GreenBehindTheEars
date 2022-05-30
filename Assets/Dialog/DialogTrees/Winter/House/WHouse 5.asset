@@ -22,17 +22,17 @@ MonoBehaviour:
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 45655e3c620367b44b7e5f4f3b55269f, type: 2}
     tasks: []
-    requiredItem: {fileID: 0}
+    requiredItem: {fileID: 11400000, guid: 84398c5ac0476da44be8e4e8e28cea23, type: 2}
     requiredDialogs: []
   - text: The letter?
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: c163f9dd0c9c25d4c81726262e246d23, type: 2}
     tasks: []
-    requiredItem: {fileID: 0}
+    requiredItem: {fileID: 11400000, guid: 656b83a1f92975a4dba8cd033b2bf4c0, type: 2}
     requiredDialogs: []
-  - text: This violin?
+  - text: This violin case?
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 1b94c05f6ff435c4493f3f85fd77e1bd, type: 2}
     tasks: []
-    requiredItem: {fileID: 0}
+    requiredItem: {fileID: 11400000, guid: 1d462d08bb00b994da3044d7065eeedf, type: 2}
     requiredDialogs: []

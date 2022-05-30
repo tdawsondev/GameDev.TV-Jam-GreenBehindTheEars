@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: Words, words, words.
+  dialogText: I am!
   italic: 0
   bold: 0
   choices:
   - text: Next
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: eba17351c09406146ace788216610e6d, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

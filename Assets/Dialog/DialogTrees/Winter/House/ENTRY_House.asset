@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: ENTRY_House
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
+  id: 54018d7f-d090-4165-b0a6-eae66b42fd2b
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
   dialogText: Did you want to ask me about something in the house?
   italic: 0
@@ -28,13 +28,13 @@ MonoBehaviour:
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 39ff96e58c5fc1b48a57335605c1a5fd, type: 2}
     tasks: []
-    requiredItem: {fileID: 0}
+    requiredItem: {fileID: 11400000, guid: f8241e4a379dab74e81da2b2442aecbb, type: 2}
     requiredDialogs: []
   - text: Yes, the vase of tulips.
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: a99264188e3d1a248853fb92ca017c49, type: 2}
     tasks: []
-    requiredItem: {fileID: 0}
+    requiredItem: {fileID: 11400000, guid: b67b8250d6b08ce47867d62290153c04, type: 2}
     requiredDialogs: []
   - text: Something else.
     characterPoints: []

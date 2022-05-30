@@ -10,29 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: WHouse 7
+  m_Name: WHouse 15
   m_EditorClassIdentifier: 
   id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: "Th-that\u2019s me.\r\n"
+  dialogText: "I\u2019m certain he was my soulmate, we made each other feel so complete!
+    Like we were missing something when we weren\u2019t together. \r\n"
   italic: 0
   bold: 0
   choices:
-  - text: "You don\u2019t look much like it."
+  - text: Next
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 1c21a28dd40888249926bd79fbc5fa32, type: 2}
-    tasks: []
-    requiredItem: {fileID: 0}
-    requiredDialogs: []
-  - text: Wow, you look so much younger here.
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 1c21a28dd40888249926bd79fbc5fa32, type: 2}
-    tasks: []
-    requiredItem: {fileID: 0}
-    requiredDialogs: []
-  - text: Do you play the violin?
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: eddfeb24f383d26448f58e5ff4581746, type: 2}
+    nextDialog: {fileID: 11400000, guid: 5a693807afb05dc40979bb1baaa45783, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

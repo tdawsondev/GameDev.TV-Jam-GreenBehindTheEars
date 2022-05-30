@@ -10,29 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: WHouse 4
+  m_Name: WHouse 33
   m_EditorClassIdentifier: 
   id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: What then?
+  dialogText: When I was young I would play it constantly and take it everywhere
+    I could.
   italic: 0
   bold: 0
   choices:
-  - text: This ring?
+  - text: Did you love it that much?
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: b840e5e5c60d8834da15fa6192e38556, type: 2}
+    nextDialog: {fileID: 11400000, guid: 8032c8053b909c04e87315234462a019, type: 2}
     tasks: []
-    requiredItem: {fileID: 11400000, guid: 710be4128f4582d478e5fb23ca957e93, type: 2}
+    requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: The photo of the old woman?
+  - text: I imagine you must have been really good at it.
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: a9b61b1f3f6405e45af996717a5fca15, type: 2}
-    tasks: []
-    requiredItem: {fileID: 11400000, guid: 72ffa3681941a2d439ecb9cbe665f796, type: 2}
-    requiredDialogs: []
-  - text: Something else
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 6cc8e45f8af2b83459e44900db631538, type: 2}
+    nextDialog: {fileID: 11400000, guid: 8032c8053b909c04e87315234462a019, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

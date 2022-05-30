@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: Words, words, words.
+  dialogText: "I remember\u2026  I\u2019m so sorry for how I treated you\u2026"
   italic: 0
   bold: 0
   choices:
   - text: Next
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 3a924f0d135353b4e9de4a071c35a542, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

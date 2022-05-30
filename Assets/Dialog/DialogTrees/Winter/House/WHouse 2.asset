@@ -14,19 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: Words, words, words.
+  dialogText: "That\u2019s my favourite photo. We took it just a few months after
+    our wedding!\r"
   italic: 0
   bold: 0
   choices:
-  - text: 1
+  - text: You were married?
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: b257ddfbbddf0f44a9a5286550443eb0, type: 2}
+    nextDialog: {fileID: 11400000, guid: bf2f4886b90dea34687174dc6395afa4, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: 2
+  - text: That man is your husband?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 486d9bd4b336ff34686ba51ca05c1ab9, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

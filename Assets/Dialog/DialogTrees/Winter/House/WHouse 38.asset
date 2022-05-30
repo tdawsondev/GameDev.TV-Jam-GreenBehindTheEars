@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: WHouse 13
+  m_Name: WHouse 38
   m_EditorClassIdentifier: 
   id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: "I love him so much, he\u2019s my other half!"
-  italic: 0
+  dialogText: She looks up from the violin to you, a very soft smile forming on her
+    face.
+  italic: 1
   bold: 0
   choices:
   - text: Next
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: e79d882e52dfae246a77d8db27d160a1, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

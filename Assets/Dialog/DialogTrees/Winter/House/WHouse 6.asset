@@ -14,13 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: acd6277c-ba3b-47f8-956c-c7730740e4ea
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
-  dialogText: Words, words, words.
+  dialogText: "That was the ring I gave him at our wedding. I remember how fantastical
+    everything felt then, knowing that there was someone that understood me fully,
+    and could love me for who I was. \r\n"
   italic: 0
   bold: 0
   choices:
-  - text: Next
+  - text: That does sound wonderful.
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 17a0b54c029e1f148aefe6da55fecec7, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
+  - text: What happened?
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 17a0b54c029e1f148aefe6da55fecec7, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
