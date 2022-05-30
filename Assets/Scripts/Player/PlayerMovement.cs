@@ -82,10 +82,13 @@ public class PlayerMovement : MonoBehaviour
 
             x = GetSmoothRawAxis("Horizontal", input);
             z = GetSmoothRawAxis("Vertical", input);
+            Vector3 moveVec = transform.right * x + transform.forward * z;
+            moveVec = Camera.main.transform.TransformDirection(moveVec.normalized);
+            moveVec.y = 0f;
 
             if (input.magnitude > 0)
             {
-                RotateGraphics(input);
+                RotateGraphics(new Vector2(moveVec.normalized.x, moveVec.normalized.z));
                 animator.SetBool("isRunning", true);
             }
             else
@@ -93,11 +96,11 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("isRunning", false);
             }
 
-            Vector3 moveVec = transform.right * x + transform.forward * z;
+            
 
             if (moveVec.magnitude != 0f)
             {
-                controller.Move(moveVec * speed * Time.deltaTime);
+                controller.Move(moveVec.normalized * speed * Time.deltaTime);
 
             }
 
