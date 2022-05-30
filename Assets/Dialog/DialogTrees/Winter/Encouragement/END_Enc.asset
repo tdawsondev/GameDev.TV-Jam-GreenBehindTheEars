@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: END_Enc
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
+  id: 04802531-2622-41ed-9bee-2b9e8b0864d8
   Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
   dialogText: "I\u2019ll see you at the dock. There\u2019s something I want to give
     you there"
@@ -22,6 +22,7 @@ MonoBehaviour:
   - text: Exit
     characterPoints: []
     nextDialog: {fileID: 0}
-    tasks: []
+    tasks:
+    - {fileID: 11400000, guid: 1fd779e7d5f169f4588641e91f34dc58, type: 2}
     requiredItem: {fileID: 0}
     requiredDialogs: []

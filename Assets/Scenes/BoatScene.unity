@@ -399,6 +399,7 @@ MonoBehaviour:
   outline: {fileID: 269573516}
   message: Take Seat
   level: 1
+  tasks: []
 --- !u!114 &269573516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,7 +1468,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 3715018315448504251}
+  agent: {fileID: 0}
+  animator: {fileID: 0}
   TakeASeat: {fileID: 11400000, guid: 6e280d5f3d7d19e4bb69d4755ae53051, type: 2}
+  Follow_Instructions: {fileID: 0}
+  afterHouse: {fileID: 0}
+  parkEntry: {fileID: 0}
+  parkBeforeHat: {fileID: 0}
+  parkRecurring: {fileID: 0}
+  tulipEntry: {fileID: 0}
+  tulipRecurring: {fileID: 0}
+  entryGW: {fileID: 0}
+  arriveWinterHouse: {fileID: 0}
+  winterHouseRecurring: {fileID: 0}
+  guidReccuring: {fileID: 0}
+  entryAW: {fileID: 0}
+  AWRecurring: {fileID: 0}
+  entryFinal: {fileID: 0}
+  parkLocation: {fileID: 0}
+  houseLocation: {fileID: 0}
+  wintersHouse: {fileID: 0}
+  GateKeeperBoat: {fileID: 0}
 --- !u!1 &2090895137
 GameObject:
   m_ObjectHideFlags: 0
@@ -6878,7 +6899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 3715018315448504247}
-  message: Talk with Grave Keeper
+  message: Talk with Gatekeeper
   dialog: {fileID: 11400000, guid: c7dbdefce87f65545aa9631f4c8a4088, type: 2}
 --- !u!1001 &5988897978780921943
 PrefabInstance:

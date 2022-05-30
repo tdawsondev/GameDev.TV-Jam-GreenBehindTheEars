@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: d38e04662cfd47b458a0b115030228fe, type: 2}
   m_LightingSettings: {fileID: 321941428}
 --- !u!196 &4
 NavMeshSettings:
@@ -1088,7 +1088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178636999686710470, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_FollowOffset.z
-      value: 2
+      value: 9.01
       objectReference: {fileID: 0}
     - target: {fileID: 6178636999738734642, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1100,27 +1100,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178636999738734642, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.3699999
+      value: 5.6400003
       objectReference: {fileID: 0}
     - target: {fileID: 6178636999738734642, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.000000013128814
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6178636999738734642, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000011121775
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6178636999738734642, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.76302
+      value: 0.8945464
       objectReference: {fileID: 0}
     - target: {fileID: 6178636999738734642, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6463749
+      value: -0.44697514
       objectReference: {fileID: 0}
     - target: {fileID: 6178636999738734643, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: near clip plane
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6178637001063546424, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_RootOrder
@@ -1180,23 +1180,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178637001495955340, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.3699999
+      value: 5.6400003
       objectReference: {fileID: 0}
     - target: {fileID: 6178637001495955340, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.000000013128814
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6178637001495955340, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000011121775
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6178637001495955340, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.76302
+      value: 0.8945464
       objectReference: {fileID: 0}
     - target: {fileID: 6178637001495955340, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6463749
+      value: -0.44697514
       objectReference: {fileID: 0}
     - target: {fileID: 6178637001495955343, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_Follow
@@ -1208,7 +1208,7 @@ PrefabInstance:
       objectReference: {fileID: 1864668559}
     - target: {fileID: 6178637001495955343, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
       propertyPath: m_Lens.NearClipPlane
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1259c1ccf80cf794896688469c24b56f, type: 3}
@@ -1775,7 +1775,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23080
+  m_Name: pb_Mesh2096866
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2184,7 +2184,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22968
+  m_Name: pb_Mesh2096754
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
