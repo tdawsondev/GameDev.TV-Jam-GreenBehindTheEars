@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: GWHouse 1
   m_EditorClassIdentifier: 
-  id: 00000000-0000-0000-0000-000000000000
+  id: 7d015c76-7bf5-45b2-b9bd-5f735011eb44
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: "Hm\u2026 I see. It seems she must be having a harder time than I expected\u2026
     Here, come with me, I will speak with her.\r\n"
@@ -22,6 +22,7 @@ MonoBehaviour:
   - text: Exit
     characterPoints: []
     nextDialog: {fileID: 0}
-    tasks: []
+    tasks:
+    - {fileID: 11400000, guid: 2d5ed2586286c3448b4d02be3ff91ad2, type: 2}
     requiredItem: {fileID: 0}
     requiredDialogs: []

@@ -13,12 +13,16 @@ public class Gatekeeper_Character : Character
     public DialogObject parkRecurring;
     public DialogObject tulipEntry;
     public DialogObject tulipRecurring;
+    public DialogObject entryGW;
+    public DialogObject arriveWinterHouse;
+    public DialogObject winterHouseRecurring;
 
 
 
     [Header("Destinations")]
     public Transform parkLocation;
     public Transform houseLocation;
+    public Transform wintersHouse;
 
 
 
