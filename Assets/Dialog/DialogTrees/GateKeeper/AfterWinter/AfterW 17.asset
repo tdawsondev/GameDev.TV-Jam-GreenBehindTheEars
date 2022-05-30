@@ -21,7 +21,7 @@ MonoBehaviour:
   choices:
   - text: How long have you been doing this?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 9a1978667a50d9d41902a8ae4c994dec, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

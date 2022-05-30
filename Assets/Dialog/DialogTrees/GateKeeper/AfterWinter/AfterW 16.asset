@@ -20,25 +20,25 @@ MonoBehaviour:
   choices:
   - text: That is a lot to take in.
     characterPoints: []
-    nextDialog: {fileID: 11400000}
+    nextDialog: {fileID: 11400000, guid: 6bedf57bc397812459e217922a57c4cf, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: I'm going to need some time to think about that.
     characterPoints: []
-    nextDialog: {fileID: 11400000}
+    nextDialog: {fileID: 11400000, guid: 6bedf57bc397812459e217922a57c4cf, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: Wait does that mean I'm here as your replacement?
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 20b821bc9627df448aba437993e6190d, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
   - text: Just so you know. I'm not going to be your replacement.
     characterPoints: []
-    nextDialog: {fileID: 0}
+    nextDialog: {fileID: 11400000, guid: 20b821bc9627df448aba437993e6190d, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

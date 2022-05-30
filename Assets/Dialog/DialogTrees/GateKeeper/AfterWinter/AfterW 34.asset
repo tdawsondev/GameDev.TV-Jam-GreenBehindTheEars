@@ -18,7 +18,7 @@ MonoBehaviour:
   italic: 0
   bold: 0
   choices:
-  - text: Huh I walked into that one. I guess I'll go help Winter.
+  - text: You win this round old man. I guess I'll go help Winter.
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
     tasks: []
@@ -30,25 +30,13 @@ MonoBehaviour:
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: You win this round old man. I guess I'll go help Winter.
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
-    tasks: []
-    requiredItem: {fileID: 0}
-    requiredDialogs: []
   - text: Wait, this game is rigged. I guess I'll go help Winter.
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: I don't want to say any of these things. I guess I'll go help Winter.
-    characterPoints: []
-    nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
-    tasks: []
-    requiredItem: {fileID: 0}
-    requiredDialogs: []
-  - text: This is stupid and I don't want to help Winter. I guess I'll go help Winter.
+  - text: I don't want to say any of these things.
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: bcca9cda0c35e4b4c8dc7e9d4b8b855c, type: 2}
     tasks: []

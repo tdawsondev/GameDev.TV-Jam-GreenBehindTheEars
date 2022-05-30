@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: AfterW 3
+  m_Name: WHouse 1
   m_EditorClassIdentifier: 
-  id: a918fd9d-ce06-4032-bb38-eedebafb5f22
-  Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: The Gatekeeper chuckles softly.
-  italic: 1
+  id: acd6277c-ba3b-47f8-956c-c7730740e4ea
+  Speaker: {fileID: 11400000, guid: eafd8dd7ecf8ccd4dbc3ca7329a0eccf, type: 2}
+  dialogText: Words, words, words.
+  italic: 0
   bold: 0
   choices:
   - text: Next
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: f1847bc3bd10e9149a4d6f1657771e58, type: 2}
+    nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []

@@ -25,6 +25,12 @@ MonoBehaviour:
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
+  - text: I'd love to help her.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: b9286ee9760fc74498582b0c8ef6d4c8, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs: []
   - text: 'Fiiiiiiine. '
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: 1c41ed6dcb705f64096558a144092f99, type: 2}

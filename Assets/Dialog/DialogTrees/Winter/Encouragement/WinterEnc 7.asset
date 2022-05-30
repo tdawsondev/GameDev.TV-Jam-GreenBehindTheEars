@@ -30,3 +30,11 @@ MonoBehaviour:
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
+  - text: Well you did say that no one else had been able to understand you better
+      in a while.
+    characterPoints: []
+    nextDialog: {fileID: 11400000, guid: 4837a1605caab604aada711e661d2045, type: 2}
+    tasks: []
+    requiredItem: {fileID: 0}
+    requiredDialogs:
+    - {fileID: 11400000, guid: e577ce297b68fc144b26fb276a83ba13, type: 2}
