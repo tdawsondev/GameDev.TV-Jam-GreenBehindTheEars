@@ -48,5 +48,16 @@ public abstract class Interactable : MonoBehaviour
         }
     }
 
+    public void SetDisable()
+    {
+        PlayerInteraction.instance.RemoveInteract(this);
+        outline.enabled = false;
+        this.enabled = false;
+    }
+    public void SetEnable()
+    {
+        this.enabled = true;
+    }
+
 
 }

@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
             x = GetSmoothRawAxis("Horizontal", input);
             z = GetSmoothRawAxis("Vertical", input);
             Vector3 moveVec = transform.right * x + transform.forward * z;
-            moveVec = Camera.main.transform.TransformDirection(moveVec.normalized);
+            moveVec = Camera.main.transform.TransformDirection(moveVec);
             moveVec.y = 0f;
 
             if (input.magnitude > 0)
@@ -100,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (moveVec.magnitude != 0f)
             {
-                controller.Move(moveVec.normalized * speed * Time.deltaTime);
+                controller.Move(moveVec * speed * Time.deltaTime);
 
             }
 

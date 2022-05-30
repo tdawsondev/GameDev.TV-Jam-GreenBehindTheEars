@@ -12,13 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
   m_Name: GK_House_1 9
   m_EditorClassIdentifier: 
+  id: 430649b2-1347-445f-8ebb-3d8762735db9
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
   dialogText: 'The place between life and what lies beyond is full of many memories,
     and here those memories are condensed into shapes that ordinary people like yourself
     can understand and interact with. '
+  italic: 0
+  bold: 0
   choices:
   - text: Next
     characterPoints: []
     nextDialog: {fileID: 11400000, guid: f00d1384fce97824f90491c1d5083445, type: 2}
-    tasks: []
+    tasks:
+    - {fileID: 11400000, guid: 85d5e3a950620a447a2463a203491eff, type: 2}
     requiredItem: {fileID: 0}
+    requiredDialogs: []
