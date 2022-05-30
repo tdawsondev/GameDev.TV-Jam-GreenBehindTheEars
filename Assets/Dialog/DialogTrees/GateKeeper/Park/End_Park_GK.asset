@@ -22,11 +22,8 @@ MonoBehaviour:
   - text: Exit
     characterPoints: []
     nextDialog: {fileID: 0}
-<<<<<<< Updated upstream
     tasks:
     - {fileID: 11400000, guid: 2ec769512aba4a2488a5438e16e95fae, type: 2}
-=======
-    tasks: []
->>>>>>> Stashed changes
+
     requiredItem: {fileID: 0}
     requiredDialogs: []
