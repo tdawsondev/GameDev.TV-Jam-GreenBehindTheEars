@@ -10,30 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: Entry_Park
+  m_Name: Entry_GW
   m_EditorClassIdentifier: 
+  id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 'The items that hold the memories can be found in many places in this
-    town. They can be bestowed upon you, just as I gave you the boat, or you can
-    find them lying around, waiting to be discovered. '
+  dialogText: So, how did it go?
   italic: 0
   bold: 0
   choices:
-  - text: What is their purpose?
+  - text: She was really rude and told me to go away.
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 0ab0112c180635846b4129c8c04a28c6, type: 2}
+    nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: Who leaves them there?
+  - text: "I\u2019m not really sure, she got really upset about something and ran
+      inside her house."
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 0ab0112c180635846b4129c8c04a28c6, type: 2}
+    nextDialog: {fileID: 0}
     tasks: []
     requiredItem: {fileID: 0}
     requiredDialogs: []
-  - text: Like this hat?
+  - text: It started off well, but something really bothered her. She told me to
+      leave and locked herself in her house.
     characterPoints: []
-    nextDialog: {fileID: 11400000, guid: 3ba653265af8b644cae769965943de08, type: 2}
+    nextDialog: {fileID: 0}
     tasks: []
-    requiredItem: {fileID: 11400000, guid: c640fe7c219a36a4eb4bf10aa9555805, type: 2}
+    requiredItem: {fileID: 0}
     requiredDialogs: []

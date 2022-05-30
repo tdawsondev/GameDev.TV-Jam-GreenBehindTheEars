@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6525aaf4efe76dc4293df5e5b7851fe0, type: 3}
-  m_Name: Park_GK 6
+  m_Name: GWHouse 8
   m_EditorClassIdentifier: 
+  id: 00000000-0000-0000-0000-000000000000
   Speaker: {fileID: 11400000, guid: ddf0b8751b9c1734596c771649c1dfe7, type: 2}
-  dialogText: 'In case you have missed it, we are in this park for a reason. There
-    is a memory to be found here. You must bring it to me before we continue. '
+  dialogText: And what do you plan to do with the place all to yourself?
   italic: 0
   bold: 0
   choices: []
