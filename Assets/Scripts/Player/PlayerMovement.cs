@@ -82,9 +82,15 @@ public class PlayerMovement : MonoBehaviour
 
             x = GetSmoothRawAxis("Horizontal", input);
             z = GetSmoothRawAxis("Vertical", input);
-            Vector3 moveVec = transform.right * x + transform.forward * z;
-            moveVec = Camera.main.transform.TransformDirection(moveVec);
-            moveVec.y = 0f;
+
+            Vector3 camForward = Camera.main.transform.forward;
+            camForward.y = 0;
+            camForward.Normalize(); // get camera forward diretion ignoring y
+            Vector3 camRight = Camera.main.transform.right;
+            camRight.y = 0;
+            camRight.Normalize();// get camera right diretion ignoring y
+
+            Vector3 moveVec = camRight * x + camForward * z;
 
             if (input.magnitude > 0)
             {
